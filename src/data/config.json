@@ -1,4 +1,18 @@
 {
+  "headerbar": [
+    {
+      "name": "GET INVOLVED",
+      "url": "/get-involved"
+    },
+    {
+      "name": "HOW WE WORK",
+      "url": "/get-involved"
+    },
+    {
+      "name": "MISSION",
+      "url": "/get-involved"
+    }
+  ],
   "header": {
     "title": "We craft digital tools from human stories",
     "description": "Almost half of America struggles to balance their finances against their basic needs, and while there are resources to help, very few even know they exist. We worked directly with the communities we hope to serve to create digital solutions around common money problems. And we’re giving them away for free."

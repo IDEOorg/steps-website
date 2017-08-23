@@ -2,10 +2,12 @@ import React from 'react';
 import './index.less';
 import config from '../../data/config';
 import ContactForm from '../ContactForm';
+import Header from '../../components/Header';
 
 const MainPage = () => {
   return (
     <div className="main_page">
+      <Header />
       <div className="header_section">
         <h1>{config.header.title}</h1>
         <p>{config.header.description}</p>
