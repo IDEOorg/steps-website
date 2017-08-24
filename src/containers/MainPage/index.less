@@ -1,9 +1,65 @@
 @import '../../globals/constants.less';
 @import '../../globals/responsive.less';
 
-.main_page {
+.wrapper {
   .desktop({
   });
   .mobile({
   });
+}
+
+.main_page {
+  height: 100%;
+}
+
+.header_section {
+  height: 100%;
+  background: rgb(40,40,60);
+  h1, p {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    width: 50%;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    width: 65%;
+  }
+}
+
+.features_section {
+  background: #000C19;
+  h2, p.pullquote {
+    color: white;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  p.author {
+    color: #999999;
+    text-align: center;
+  }
+  padding: 2rem 0;
+}
+
+.benefits_section {
+  background: white;
+  h6 {
+    text-transform: uppercase;
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.0625rem;
+  }
+  .benefits_list_section {
+    display: flex;
+
+  }
 }

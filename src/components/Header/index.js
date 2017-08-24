@@ -10,7 +10,11 @@ const Header = () => {
   });
   return (
     <div className="header">
-      {links}
+      <div className="logo_section">
+      </div>
+      <div className="links_section">
+        {links}
+      </div>
     </div>
   );
 };
