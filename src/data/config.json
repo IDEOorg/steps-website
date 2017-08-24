@@ -6,19 +6,172 @@
     },
     {
       "name": "HOW WE WORK",
-      "url": "/get-involved"
+      "url": "/how-we-work"
     },
     {
       "name": "MISSION",
-      "url": "/get-involved"
+      "url": "/mission"
     }
   ],
-  "header": {
-    "title": "We craft digital tools from human stories",
-    "description": "Almost half of America struggles to balance their finances against their basic needs, and while there are resources to help, very few even know they exist. We worked directly with the communities we hope to serve to create digital solutions around common money problems. And we’re giving them away for free."
+  "mainpage": {
+    "header": {
+      "title": "We craft digital tools from human stories",
+      "description": "Almost half of America struggles to balance their finances against their basic needs, and while there are resources to help, very few even know they exist. We worked directly with the communities we hope to serve to create digital solutions around common money problems. And we’re giving them away for free.",
+      "button": {
+        "name": "TRY OUR GUIDES",
+        "url": "/landing-page"
+      }
+    },
+    "features": {
+      "title": "Here’s what we’ve learned...",
+      "pullquote": "\"These tools seem to catch all the moments when we can’t be there. Our clients could use this in the months between their appointments, or in times of crisis. Also, we have people that come to our workshops who are not eligible to enroll in our coaching programs. This is a tool we could share with them.\"",
+      "pullquoteauthor": "— First Last, Company"
+    },
+    "benefits": {
+      "benefitssections": [
+        {
+          "title": "BENEFITS FOR YOUR ORGANIZATION",
+          "benefits": [
+            {
+              "imageurl": "",
+              "title": "Reach more people",
+              "description": "By creating guided digital and interactive experiences that mirror financial coaching."
+            },
+            {
+              "imageurl": "",
+              "title": "24/7 Support",
+              "description": "Financial crisis can strike at any moment. And it’s those unexpected and vulnerable ."
+            },
+            {
+              "imageurl": "",
+              "title": "Customizable",
+              "description": "We are actively collaborating with partners to customize tools to an organization."
+            },
+            {
+              "imageurl": "",
+              "title": "Free to Access",
+              "description": "Free for the community and available for everyone that can find them useful."
+            }
+          ]
+        },
+        {
+          "title": "BENEFITS FOR YOUR COMMUNITY",
+          "benefits": [
+            {
+              "imageurl": "",
+              "title": "Simple to Use",
+              "description": "Most people are unaware of the wealth of resources at their disposal."
+            },
+            {
+              "imageurl": "",
+              "title": "Self-Service",
+              "description": "Money is difficult to talk about, and it’s hard to ask for help when you need it."
+            },
+            {
+              "imageurl": "",
+              "title": "Actionable Solutions",
+              "description": "Each digital guide starts with an easy to understand and recognizable problem."
+            }
+          ]
+        }
+      ],
+      "button": {
+        "name": "USE THEM NOW",
+        "url": ""
+      }
+    },
+    "contact": {
+      "title": "Curious? Let's help you utilize Steps",
+      "description": "We have been actively working with various organizations that could benefit from the tools we’ve created. If you feel like you could partner with us, reach out and let’s start the conversation."
+    }
   },
-  "contact": {
-    "title": "Curious? Let's help you utilize Steps",
-    "description": "We have been actively working with various organizations that could benefit from the tools we’ve created. If you feel like you could partner with us, reach out and let’s start the conversation."
+  "missionpage": {
+    "contact": {
+      "statement": "We believe that digital design has the power to move millions of Americans from financial distress to financial freedom, one step at a time.",
+      "tagline": "Join us and share in our vision"
+    },
+    "about": {
+      "title": "Join us and share in our vision",
+      "description": "Steps is a program of IDEO.org, a nonprofit working to improve the lives of people in poor and vulnerable communities through design.",
+      "button": {
+        "name": "VISIT IDEO.ORG",
+        "url": "https://steps.ideo.org"
+      }
+    },
+    "partners": {
+      "headline": "Our Partners",
+      "subheadline": "Advisory Council",
+      "description": "The Advisory Council is a group of 18 nonprofit and technology partners with unique perspectives and expertise on the needs and experiences of low-income communities in the U.S. They have been working with us to provide feedback on product creation, design, content and distribution strategy for all digital products within the Steps Program."
+    },
+    "acmembers": [
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      },
+      {
+        "title": "Title of Organization",
+        "url": "http://www.yahoo.com"
+      }
+    ],
+    "supportedby": {
+      "description": "The Advisory Council is a group of 18 nonprofit and technology partners with unique perspectives and expertise on the needs and experiences of low-income communities in the U.S. They have been working with us to provide feedback on product creation, design, content and distribution strategy for all digital products within the Steps Program.",
+      "sponsorname": "JP MORGAN CHASE"
+    },
+    "projectby": {
+      "description": "A PROJECT BY",
+      "imgurl": ""
+    }
   }
 }
