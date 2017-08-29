@@ -2,17 +2,30 @@
 
 .header {
   background-color: rgba(0,0,0,0);
+  width: 92%;
   height: @header-height;
-  width: 100%;
+  margin: 0 3.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .logo_section {
     width: 50%;
-    float: left;
-    height: 10px;
   }
   .links_section {
     width: 50%;
-    float: left;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+  }
+  .header_link {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem
+  }
+  .header_button {
+    height: 2.5rem;
+    width: 8.75rem;
+    background: #4c79ff;
+    margin-left: 2rem;
   }
 }

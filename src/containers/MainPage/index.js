@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import './index.less';
 import config from '../../data/config';
 import ContactForm from '../ContactForm';
@@ -8,15 +9,17 @@ import Header from '../../components/Header';
 const MainPage = () => {
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
+      const imageUrl = require(`../../assets/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
       return (
         <div key={benefit.title}>
+          <img src={imageUrl} alt="Icon" />
           <h2>{benefit.title}</h2>
           <p>{benefit.description}</p>
         </div>
       );
     });
     return (
-      <div key={section.title}>
+      <div key={section.title} className={classNames(section.cssClass, "benefits_box")}>
         <h6 className="benefits_section_title">{section.title}</h6>
         <div className="benefits_list_section">
           {benefits}
@@ -28,14 +31,21 @@ const MainPage = () => {
   return (
     <div className="wrapper main_page">
       <div className="header_section">
-        <Header />
-        <h1>{mainpage.header.title}</h1>
-        <p>{mainpage.header.description}</p>
-        <div className="button_section">
-          <Button
-            text={mainpage.header.button.name}
-            url={mainpage.header.button.url}
-          />
+        <Header showGuideButton={false} />
+        <div className="header_subsection">
+          <div className="header_subsection_wrapper">
+            <div className="header_title_section">
+              <div className="header_title">
+                <h1>{mainpage.header.title}</h1>
+                <p>{mainpage.header.description}</p>
+              </div>
+            </div>
+            <div className="button_section">
+              <Button url={mainpage.header.button.url} styling="primary_button">
+                <p>{mainpage.header.button.name}</p>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
       <div className="features_section">
@@ -50,6 +60,11 @@ const MainPage = () => {
         <h2>{mainpage.contact.title}</h2>
         <p>{mainpage.contact.description}</p>
         <ContactForm />
+      </div>
+      <div className="about_ideo_section">
+        <div className="about_ideo_logo_box">
+          <p className="about_ideo_logo_text">A PROJECT BY</p>
+        </div>
       </div>
     </div>
   );

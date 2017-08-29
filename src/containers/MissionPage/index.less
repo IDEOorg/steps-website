@@ -1,9 +1,58 @@
 @import '../../globals/constants.less';
 @import '../../globals/responsive.less';
 
-.main_page {
-  .desktop({
-  });
-  .mobile({
-  });
+.mission_page {
+  height: 100%;
+}
+
+.mission_subsection_wrapper {
+  width: 75%;
+  margin: 0 auto;
+  h2, p {
+    text-align: center;
+    color: white;
+  }
+  .mission_tagline {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .mission_statement {
+    font-size: 2.25rem;
+  }
+}
+
+.mission_section {
+  background: #d8d8d8;
+}
+
+.about_section {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  p, h2 {
+    text-align: center;
+  }
+  h2.about_title {
+    color: #19181a;
+    font-size: 3.75rem;
+    line-height: 1.1;
+    letter-spacing: -0.03125rem;
+    margin-bottom: 1.875rem;
+  }
+  p.about_description {
+    color: rgba(25, 24, 26, 0.72);
+    font-size: 1.3175rem;
+    line-height: 1.287;
+  }
+  .about_subsection {
+    width: 60%;
+    margin: 0 auto;
+    margin: 7em 0;
+  }
+  .about_button_section {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+  }
 }

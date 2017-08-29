@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 
 const HowWeWorkPage = () => {
   return (
-    <div className="wrapper">
+    <div className="how_we_work_page">
       <Header />
     </div>
   );
