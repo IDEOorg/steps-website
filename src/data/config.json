@@ -15,8 +15,8 @@
   ],
   "mainpage": {
     "header": {
-      "title": "We craft digital tools from human stories",
-      "description": "Almost half of America struggles to balance their finances against their basic needs, and while there are resources to help, very few even know they exist. We worked directly with the communities we hope to serve to create digital solutions around common money problems. And we’re giving them away for free.",
+      "title": "Our mission is to give everyone access to financial coaching",
+      "description": "Almost half of America struggles to balance their finances against their basic needs and while there are resources to help, very few even know they exist. We worked directly with the communities we hope to serve to create a suite of digital guides around common money problems. And we’re giving them away for free.",
       "button": {
         "name": "TRY OUR GUIDES",
         "url": "/landing-page"
@@ -30,45 +30,47 @@
     "benefits": {
       "benefitssections": [
         {
+          "cssClass": "org_benefits_section",
           "title": "BENEFITS FOR YOUR ORGANIZATION",
           "benefits": [
             {
-              "imageurl": "",
+              "imageurl": "people.svg",
               "title": "Reach more people",
               "description": "By creating guided digital and interactive experiences that mirror financial coaching."
             },
             {
-              "imageurl": "",
+              "imageurl": "support.svg",
               "title": "24/7 Support",
               "description": "Financial crisis can strike at any moment. And it’s those unexpected and vulnerable ."
             },
             {
-              "imageurl": "",
+              "imageurl": "customizable.svg",
               "title": "Customizable",
               "description": "We are actively collaborating with partners to customize tools to an organization."
             },
             {
-              "imageurl": "",
+              "imageurl": "access.svg",
               "title": "Free to Access",
               "description": "Free for the community and available for everyone that can find them useful."
             }
           ]
         },
         {
+          "cssClass": "community_benefits_section",
           "title": "BENEFITS FOR YOUR COMMUNITY",
           "benefits": [
             {
-              "imageurl": "",
+              "imageurl": "simple.svg",
               "title": "Simple to Use",
               "description": "Most people are unaware of the wealth of resources at their disposal."
             },
             {
-              "imageurl": "",
+              "imageurl": "selfservice.svg",
               "title": "Self-Service",
               "description": "Money is difficult to talk about, and it’s hard to ask for help when you need it."
             },
             {
-              "imageurl": "",
+              "imageurl": "solutions.svg",
               "title": "Actionable Solutions",
               "description": "Each digital guide starts with an easy to understand and recognizable problem."
             }
@@ -85,88 +87,179 @@
       "description": "We have been actively working with various organizations that could benefit from the tools we’ve created. If you feel like you could partner with us, reach out and let’s start the conversation."
     }
   },
+  "getinvolved": {
+    "mainpage": {
+      "title": "Free digital tools for low income communities",
+      "stepstagline": "THERE ARE A NUMBER OF WAYS YOU CAN USE OUR GUIDES",
+      "steps": [
+        {
+          "title": "Try them out",
+          "anchor": "try-them-out"
+        },
+        {
+          "title": "Collaborate with us",
+          "anchor": "collaborate"
+        },
+        {
+          "title": "Steal our code",
+          "anchor": "steal-our-code"
+        }
+      ]
+    },
+    "trythempage": {
+      "title": "Share them directly with your clients",
+      "description": "Take a look at our collection of guides, try them out and share them with your clients. We would love to hear your feedback as we continue to improve them.",
+      "infobox": {
+        "text": "Each digital guide tackles a common money problem by mirroring the in-person coaching process and linking users to resources and action-plans. The experiences provide step-by-step help and personalized action plans for things like paying rent, buying food, rebuilding credit and more.",
+        "button": {
+          "text": "TRY OUR GUIDES",
+          "url": "https://steps.ideo.org/landing-page"
+        },
+        "imgurl": "meh.png"
+      }
+    },
+    "collabpage": {
+      "title": "Let's help you make your own",
+      "description": "We can work with you to make a guide that links your community to local resources and can be flexible to things like language and location.",
+      "infobox": {
+        "text": "NerdWallet recognized an opportunity to help their audience with specific financial issues, so we partnered with them to make a suite of guides under their brand.",
+        "button": {
+          "text": "NERDWALLET GUIDES",
+          "url": "https://www.nerdwallet.com/blog/steps-to-financial-health/"
+        },
+        "imgurl": "meh.png"
+      }
+    },
+    "codepage": {
+      "title": "Customize them yourself",
+      "description": "Our original source code is freely available for anyone to use and distribute.",
+      "infobox": {
+        "text": "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code.",
+        "button": {
+          "text": "VIEW GUIDES ON GITHUB",
+          "url": "https://github.com/ideoorg"
+        },
+        "imgurl": "meh.png"
+      }
+    }
+  },
+  "howwework": {
+    "mainpage": {
+      "title": "Human-centered design starts with people",
+      "description": "Our research begins with the people we hope to serve and the experts, non-profit organizations, and service providers that work within those communities. Once we begin to design from their perspective, we start to identify where we could have the greatest impact in scaling a digital solution.",
+      "button": {
+        "text": "VIEW WORK",
+        "videolink": "meh"
+      }
+    },
+    "ideationpage": {
+      "title": "Ideation",
+      "description": "The next phase of our design process is about ideas, lots of them. We spend time thinking about all the ones that are too crazy to work and too crazy not to try. Then we invite some of the same people we met during our initial research to tell us what they think. This helps us refine our thinking and narrow down solid directions.",
+      "infobox": {
+        "title": "MINUTE APP",
+        "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
+      },
+      "imgurl": "meh.png"
+    },
+    "convergencepage": {
+      "title": "Convergence",
+      "description": "When we have an idea that feels right, we create a series of  prototypes in a few directions based in common threads from our research. Then we send them into the world for people to utilize. In this phase we gain valuable insights about the demographics of our audience and let their preferences dictate user experience for the next iteration.",
+      "infobox": {
+        "title": "MINUTE APP",
+        "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
+      },
+      "imgurl": "meh.png"
+    },
+    "adoptionpage": {
+      "title": "Adoption",
+      "description": "Once we have a digital tool we know the community will embrace, we can’t wait to share it with everyone. Our focus then becomes about finding partnerships and strategies that will continue to improve them, and make them freely accessible to as many people and organizations as possible.",
+      "button": {
+        "text": "VIEW OUR GUIDES",
+        "url": "https://steps.ideo.org/landing-page"
+      }
+    }
+  },
   "missionpage": {
     "contact": {
       "statement": "We believe that digital design has the power to move millions of Americans from financial distress to financial freedom, one step at a time.",
       "tagline": "Join us and share in our vision"
     },
     "about": {
-      "title": "Join us and share in our vision",
-      "description": "Steps is a program of IDEO.org, a nonprofit working to improve the lives of people in poor and vulnerable communities through design.",
+      "title": "Who we are",
+      "description": "Steps is a program of IDEO.org, a nonprofit working to improve the lives of people in poor and vulnerable communities through design. We are supported by JPMorgan Chase and backed by an Advisory Council of trusted non-profit organizations.",
       "button": {
         "name": "VISIT IDEO.ORG",
         "url": "https://steps.ideo.org"
       }
     },
     "partners": {
-      "headline": "Our Partners",
-      "subheadline": "Advisory Council",
-      "description": "The Advisory Council is a group of 18 nonprofit and technology partners with unique perspectives and expertise on the needs and experiences of low-income communities in the U.S. They have been working with us to provide feedback on product creation, design, content and distribution strategy for all digital products within the Steps Program."
-    },
-    "acmembers": [
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      },
-      {
-        "title": "Title of Organization",
-        "url": "http://www.yahoo.com"
-      }
-    ],
-    "supportedby": {
+      "headline": "Advisory Council",
       "description": "The Advisory Council is a group of 18 nonprofit and technology partners with unique perspectives and expertise on the needs and experiences of low-income communities in the U.S. They have been working with us to provide feedback on product creation, design, content and distribution strategy for all digital products within the Steps Program.",
+      "acmembers": [
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        },
+        {
+          "title": "Title of Organization",
+          "url": "http://www.yahoo.com"
+        }
+      ]
+    },
+    "supportedby": {
+      "description": "The IDEO.org Steps Program is supported by JPMorgan Chase",
       "sponsorname": "JP MORGAN CHASE"
     },
     "projectby": {

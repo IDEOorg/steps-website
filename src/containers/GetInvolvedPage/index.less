@@ -1,9 +1,68 @@
 @import '../../globals/constants.less';
 @import '../../globals/responsive.less';
 
-.main_page {
-  .desktop({
-  });
-  .mobile({
-  });
+.get_involved_page {
+  height: 100%;
+  .gi_header_section {
+    height: 100%;
+    background: #18d789;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    .gi_title_text {
+      width: 44%;
+      margin: 0 auto;
+      h2 {
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        line-height: 1.1;
+      }
+    }
+    .gi_anchors_section {
+      width: 100%;
+      p.gi_tagline {
+        letter-spacing: 0.0625rem;
+        font-size: 0.875rem;
+        color: white;
+        text-align: center;
+      }
+    }
+    .gi_anchor_links {
+      width: 88%;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 2.25rem;
+      margin-bottom: 3rem;
+      justify-content: space-between;
+      .gi_anchor_link_box {
+        width: 30%;
+        .anchor_link_styling {
+          opacity: 0.7;
+          padding: 2.25rem;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+            transform: translate(0, -0.625rem);
+          }
+          p {
+            color: @color-dark;
+            font-size: 1.25rem;
+            display: inline-block;
+            margin-right: 1.375rem;
+          }
+        }
+      }
+    }
+  }
+  .gi_try_them_page, .gi_collaborate_page {
+    height: 300px;
+    background: pink;
+  }
+  .gi_try_them_page {
+    background: orange;
+  }
+  .gi_collaborate_page {
+    margin-bottom: 1000px;
+  }
 }

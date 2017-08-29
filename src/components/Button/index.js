@@ -1,10 +1,11 @@
 import React from 'react';
+import classNames from 'classnames';
 import './index.less';
 
 const Button = (props) => {
   return (
-    <div className="button">
-      <p>{props.text}</p>
+    <div className={classNames("button", props.styling)}>
+      {props.children}
     </div>
   );
 };

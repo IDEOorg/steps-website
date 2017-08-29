@@ -1,34 +1,39 @@
 @import '../../globals/constants.less';
 @import '../../globals/responsive.less';
 
-.wrapper {
-  .desktop({
-  });
-  .mobile({
-  });
-}
-
 .main_page {
   height: 100%;
 }
 
 .header_section {
-  height: 100%;
   background: rgb(40,40,60);
   h1, p {
     color: white;
     text-align: center;
     margin: 0 auto;
   }
-  h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    width: 50%;
+  .header_title_section {
+    width: 100%;
+    margin-bottom: 4rem;
   }
-  p {
-    font-size: 1rem;
-    font-weight: 300;
+  .header_title {
     width: 65%;
+    margin: 0 auto;
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: -0.03125rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  .button_section {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -58,8 +63,30 @@
     font-weight: 600;
     letter-spacing: 0.0625rem;
   }
+  .benefits_box {
+    padding: 6rem 0;
+  }
   .benefits_list_section {
     display: flex;
+  }
+  .org_benefits_section {
+    background: white;
+  }
+  .community_benefits_section {
+    background: #f5f5f5;
+  }
+}
 
+.about_ideo_section {
+  background: white;
+  padding: 5rem 0;
+  .about_ideo_logo_box {
+    margin: 0 auto;
+    .about_ideo_logo_text {
+      color: #d8d8d8;
+      font-size: 0.875rem;
+      letter-spacing: 0.05rem;
+      text-align: center;
+    }
   }
 }
