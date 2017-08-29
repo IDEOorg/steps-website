@@ -3,7 +3,11 @@ import './index.less';
 import config from '../../data/config';
 import Header from '../../components/Header';
 import InfoBox from '../../components/InfoBox';
+import Button from '../../components/Button';
 
+const trythemImgUrl = require(`../../assets/${config.getinvolved.trythempage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
+const collabImgUrl = require(`../../assets/${config.getinvolved.collabpage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
+const codeImgUrl = require(`../../assets/${config.getinvolved.codepage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
 const onAnchorClick = (anchor) => {
   document.getElementById(anchor).scrollIntoView();
 };
@@ -24,7 +28,7 @@ const GetInvolvedPage = () => {
   return (
     <div className="get_involved_page">
       <div className="gi_header_section">
-        <Header />
+        <Header showGuideButton />
         <div className="gi_title_text">
           <h2>{gi.mainpage.title}</h2>
         </div>
@@ -36,8 +40,43 @@ const GetInvolvedPage = () => {
         </div>
       </div>
       <div className="gi_try_them_page" id="try-them-out">
+        <div className="gi_try_content">
+          <h2>{gi.trythempage.title}</h2>
+          <p>{gi.trythempage.description}</p>
+        </div>
+        <div className="gi_visual_box">
+          <img className="gi_visual" src={trythemImgUrl} alt={gi.trythempage.infobox.imgurl} />
+          <div className="gi_info_section_wrapper">
+            <div className="gi_info_section">
+              <InfoBox styling="gi_infobox">
+                <p className="gi_infobox_text">{gi.trythempage.infobox.text}</p>
+                <Button styling="primary_button">
+                  <p>{gi.trythempage.infobox.button.text}</p>
+                </Button>
+              </InfoBox>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="gi_collaborate_page" id="collaborate">
+        <div className="gi_visual_box">
+          <div className="gi_info_section_wrapper">
+            <div className="gi_info_section left">
+              <InfoBox styling="gi_infobox ">
+                <p className="gi_infobox_text">{gi.collabpage.infobox.text}</p>
+                <Button styling="primary_button">
+                  <p>{gi.collabpage.infobox.button.text}</p>
+                </Button>
+              </InfoBox>
+            </div>
+          </div>
+          <img className="gi_visual" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
+        </div>
+      </div>
+      <div className="gi_code_page" id="code">
+        <div className="gi_visual_box">
+          <img className="gi_visual" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
+        </div>
       </div>
     </div>
   );
