@@ -2,6 +2,7 @@ import React from 'react';
 import './index.less';
 import config from '../../data/config';
 import Header from '../../components/Header';
+import ContactForm from '../ContactForm';
 import InfoBox from '../../components/InfoBox';
 import Button from '../../components/Button';
 
@@ -59,12 +60,19 @@ const GetInvolvedPage = () => {
         </div>
       </div>
       <div className="gi_collaborate_page" id="collaborate">
+        <div className="gi_collab_form">
+          <div className="gi_collab_form_content">
+            <h2 className="gi_collab_title">{gi.collabpage.title}</h2>
+            <p className="gi_collab_description">{gi.collabpage.description}</p>
+          </div>
+          <ContactForm />
+        </div>
         <div className="gi_visual_box">
           <div className="gi_info_section_wrapper">
             <div className="gi_info_section left">
-              <InfoBox styling="gi_infobox ">
+              <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.collabpage.infobox.text}</p>
-                <Button styling="primary_button">
+                <Button styling="primary_button blue">
                   <p>{gi.collabpage.infobox.button.text}</p>
                 </Button>
               </InfoBox>
@@ -73,8 +81,22 @@ const GetInvolvedPage = () => {
           <img className="gi_visual" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
         </div>
       </div>
-      <div className="gi_code_page" id="code">
+      <div className="gi_code_page" id="steal-our-code">
+        <div className="gi_code_page_content">
+          <h2 className="gi_code_title">{gi.codepage.title}</h2>
+          <p className="gi_code_description">{gi.codepage.description}</p>
+        </div>
         <div className="gi_visual_box">
+          <div className="gi_info_section_wrapper">
+            <div className="gi_info_section left">
+              <InfoBox styling="gi_infobox">
+                <p className="gi_infobox_text">{gi.codepage.infobox.text}</p>
+                <Button styling="primary_button">
+                  <p>{gi.codepage.infobox.button.text}</p>
+                </Button>
+              </InfoBox>
+            </div>
+          </div>
           <img className="gi_visual" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
         </div>
       </div>
