@@ -1,29 +1,37 @@
 
 
 .contact_form {
-  margin: 30px 0;
+  margin: 30px auto;
   max-width: 900px;
   font-family: Calibre;
+  text-align: center;
 
-  input[type="email"], input[type="submit"], select {
+  .input-wrapper {
     display: block;
+    margin: 0 auto;
+    padding: 6px 8px;
 
     @media only screen and (min-width: 890px) {
       display: inline-block; /* Online inline if all three can fit */
     }
   }
 
+  /* Force vertical if the parent component specifies stacked */
+  &.stacked .input-wrapper {
+    display: block !important;
+  }
+
   input[type="email"], select {
     width: 280px;
     height: 50px;
     border-radius: 4px;
-    margin: 6px 8px;
     padding-left: 25px;
 
     line-height: 50px;
     font-size: 14px;
     color: #AAA;
 
+    background-color: white;
     border-style:solid;
     border-width: 1px;
     border-color: #888;
@@ -40,6 +48,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: white !important;
   background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03LjQxIDcuODRMMTIgMTIuNDJsNC41OS00LjU4TDE4IDkuMjVsLTYgNi02LTZ6Ii8+CiAgICA8cGF0aCBkPSJNMC0uNzVoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KPC9zdmc+") no-repeat 95% center;
 }
 
@@ -48,12 +57,12 @@ select {
   }
 
   input[type="submit"] {
-    margin: 6px 8px;
     height: 50px;
     width: 280px;
     border-radius: 4px;
     background-color: #18d789;
     border-style: none;
+    display: inline-block;
 
     cursor: pointer;
 
@@ -63,9 +72,9 @@ select {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+  }
 
-    &.blue {
-      background-color: #4c79ff;
-    }
+  &.blueButton input[type="submit"] {
+    background-color: #4c79ff;
   }
 }
