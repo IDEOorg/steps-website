@@ -5,6 +5,7 @@ import config from '../../data/config';
 import ContactForm from '../ContactForm';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const MainPage = () => {
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
@@ -30,7 +31,7 @@ const MainPage = () => {
   const mainpage = config.mainpage;
   return (
     <div className="wrapper main_page">
-      <div className="header_section">
+      <div className="header_section main_section">
         <Header showGuideButton={false} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper">
@@ -61,11 +62,7 @@ const MainPage = () => {
         <p>{mainpage.contact.description}</p>
         <ContactForm />
       </div>
-      <div className="about_ideo_section">
-        <div className="about_ideo_logo_box">
-          <p className="about_ideo_logo_text">A PROJECT BY</p>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

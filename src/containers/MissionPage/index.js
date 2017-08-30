@@ -2,6 +2,7 @@ import React from 'react';
 import './index.less';
 import config from '../../data/config';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import ContactForm from '../ContactForm';
 
@@ -32,6 +33,7 @@ const MissionPage = () => {
       </div>
       <div className="partners_section">
       </div>
+      <Footer />
     </div>
   );
 };

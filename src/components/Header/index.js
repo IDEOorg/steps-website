@@ -24,7 +24,9 @@ const Header = (props) => {
   return (
     <div className={classNames("header", props.styling)}>
       <div className="logo_section">
-        <img src={logo} alt="Steps Logo" />
+        <a href="#/">
+          <img src={logo} alt="Steps Logo" />
+        </a>
       </div>
       <div className="links_section">
         {links}

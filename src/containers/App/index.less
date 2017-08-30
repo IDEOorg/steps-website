@@ -18,7 +18,7 @@
   height: 100%;
 }
 .header_subsection {
-  height: ~"calc(100% - 80px)";
+  height: ~"calc(100% - @{header-height})";
   display: flex;
   align-content: center;
   align-items: center;
@@ -28,7 +28,7 @@
 .primary_button {
   height: 4em;
   width: 12.5em;
-  background: #18d789;
+  background: @color-green;
   p {
     color: white;
   }

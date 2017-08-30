@@ -6,7 +6,6 @@
 }
 
 .header_section {
-  background: rgb(40,40,60);
   h1, p {
     color: white;
     text-align: center;
@@ -20,21 +19,22 @@
     width: 65%;
     margin: 0 auto;
     h1 {
-      font-size: 3rem;
-      font-weight: 300;
-      letter-spacing: -0.03125rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.1;
+      .title;
     }
     p {
       font-size: 1rem;
-      font-weight: 300;
     }
   }
   .button_section {
     display: flex;
     justify-content: center;
   }
+}
+
+.main_section {
+  background-image: url('../../assets/home.jpg');
+  background-color: @color-blue;
+  background-blend-mode: multiply;
 }
 
 .features_section {
@@ -74,19 +74,5 @@
   }
   .community_benefits_section {
     background: @gray-background;
-  }
-}
-
-.about_ideo_section {
-  background: white;
-  padding: 5rem 0;
-  .about_ideo_logo_box {
-    margin: 0 auto;
-    .about_ideo_logo_text {
-      color: #d8d8d8;
-      font-size: 0.875rem;
-      letter-spacing: 0.05rem;
-      text-align: center;
-    }
   }
 }

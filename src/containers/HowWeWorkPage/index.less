@@ -3,4 +3,112 @@
 
 .how_we_work_page {
   height: 100%;
+  background-image: url('../../assets/howwework.jpg');
+  background-color: @color-blue;
+  background-blend-mode: multiply;
+  .hww_header_section {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: ~"calc(100% - @{header-height})";
+    width: 50%;
+    margin: 0 auto;
+    h1, p {
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      .title;
+    }
+    p {
+      font-size: 1.25rem;
+      line-height: 1.25;
+    }
+  }
+  h2 {
+    .subhead;
+  }
+  p.description {
+    .subhead_description;
+  }
+  .hww_visual {
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  .hww_visual_img {
+    width: 70%;
+    height: auto;
+  }
+  .hww_ideation, .hww_convergence {
+    display: flex;
+    padding-top: 3rem;
+    .hww_content, .hww_visual {
+      width: 50%;
+    }
+  }
+  .hww_ideation {
+    .hww_content {
+      margin: 0 10%;
+    }
+  }
+  .hww_convergence {
+    .hww_content {
+      margin-right: 10%;
+    }
+  }
+  .hww_ideation {
+    background: #fff0ed;
+    p, h2 {
+      color: @color-dark;
+    }
+  }
+  .hww_convergence {
+    background: @color-blue;
+    h2 {
+      color: white;
+    }
+    p {
+      color: rgba(255,255,255,0.72);
+    }
+  }
+  .hww_infobox {
+    width: 75%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    p, h6 {
+      font-size: 0.875rem;
+    }
+    h6 {
+      color: @color-dark;
+      font-weight: 500;
+      margin-bottom: 1em;
+      letter-spacing: 0.0625rem;
+    }
+    p {
+      color: @color-text;
+      line-height: 1.33333;
+    }
+  }
+  .hww_adoption {
+    background: @color-green;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    .hww_adoption_section {
+      width: 55%;
+      margin: 7rem auto;
+      h1 {
+        .subhead;
+        text-align: center;
+      }
+      p {
+        .subhead_description;
+        text-align: center;
+      }
+    }
+    .hww_button {
+      margin: 4rem auto 0 auto;
+    }
+  }
 }

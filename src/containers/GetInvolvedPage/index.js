@@ -2,6 +2,7 @@ import React from 'react';
 import './index.less';
 import config from '../../data/config';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import ContactForm from '../ContactForm';
 import InfoBox from '../../components/InfoBox';
 import Button from '../../components/Button';
@@ -31,7 +32,7 @@ const GetInvolvedPage = () => {
       <div className="gi_header_section">
         <Header showGuideButton />
         <div className="gi_title_text">
-          <h2>{gi.mainpage.title}</h2>
+          <h1>{gi.mainpage.title}</h1>
         </div>
         <div className="gi_anchors_section">
           <p className="gi_tagline">{gi.mainpage.stepstagline}</p>
@@ -100,6 +101,7 @@ const GetInvolvedPage = () => {
           <img className="gi_visual" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
