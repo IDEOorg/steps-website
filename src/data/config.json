@@ -23,9 +23,17 @@
       }
     },
     "features": {
-      "title": "Here’s what we’ve learned...",
-      "pullquote": "\"These tools seem to catch all the moments when we can’t be there. Our clients could use this in the months between their appointments, or in times of crisis. Also, we have people that come to our workshops who are not eligible to enroll in our coaching programs. This is a tool we could share with them.\"",
-      "pullquoteauthor": "— First Last, Company"
+      "title": "47% of Americans don’t have $400 in emergency savings. We designed digital solutions from their perspective. ",
+      "pullquote": "\"These tools can be used to find resources without asking a financial coach. Our clients could use this in the months between their appointments, or in times of crisis. Also, we have people that come to our workshops who are not eligible to enroll in our coaching programs. This is a tool we could share with them.\"",
+      "pullquoteauthor": "— Phuong Luong, Financial Coach",
+      "carousel": [
+        "Guides-1.png",
+        "Guides-2.png",
+        "Guides-3.png",
+        "Guides-4.png",
+        "Guides-5.png",
+        "Guides-6.png"
+      ]
     },
     "benefits": {
       "benefitssections": [
