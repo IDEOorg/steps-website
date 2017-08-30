@@ -6,8 +6,12 @@ import ContactForm from '../ContactForm';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Carousel from '../../components/Carousel';
 
 const MainPage = () => {
+  const carouselImages = config.mainpage.features.carousel.map((image) => {
+    return <img className="temp_image_class" src={require(`../../assets/${image}`)} alt="Guide" />;
+  });
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
       const imageUrl = require(`../../assets/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
@@ -51,8 +55,14 @@ const MainPage = () => {
       </div>
       <div className="features_section">
         <h2>{mainpage.features.title}</h2>
-        <p className="pullquote">{mainpage.features.pullquote}</p>
-        <p className="author">{mainpage.features.pullquoteauthor}</p>
+        <div className="features_carousel">
+          <Carousel />
+          {carouselImages}
+        </div>
+        <div className="features_pullquote">
+          <p className="pullquote">{mainpage.features.pullquote}</p>
+          <p className="author">{mainpage.features.pullquoteauthor}</p>
+        </div>
       </div>
       <div className="benefits_section">
         {benefitsSections}
