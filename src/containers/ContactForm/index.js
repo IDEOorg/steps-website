@@ -22,27 +22,32 @@ class ContactForm extends Component {
   }
 
   render() {
-    const submitClassname = `button ${(this.props.buttonStyle === "blue" ? "blue" : "")}`;
+    const formClassname = `contact_form ${(this.props.styleOptions != null ? this.props.styleOptions.join(" ") : "")}`;
 
     return (
-      <div className="contact_form">
+      <div className={formClassname}>
         <form action="https://ideo.us2.list-manage.com/subscribe/post" method="POST">
           <input type="hidden" name="u" value="177d391697939b9281ab317e0" />
           <input type="hidden" name="id" value="7b8428b00a" />
 
-          <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
+          <div className="input-wrapper">
+            <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
+          </div>
 
-          <select className="select-small" id="MERGE1" name="MERGE1">
-            <option value="I am a service provider">I am a service provider</option>
-            <option value="I am a network">I am a network</option>
-            <option value="I am a developer">I am a developer</option>
-            <option value="I am a funder">I am a funder</option>
-            <option value="Other">Other</option>
-          </select>
+          <div className="input-wrapper">
+            <select className="select-small" id="MERGE1" name="MERGE1">
+              <option value="I am a service provider">I am a service provider</option>
+              <option value="I am a network">I am a network</option>
+              <option value="I am a developer">I am a developer</option>
+              <option value="I am a funder">I am a funder</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
 
-          <input type="submit" className={submitClassname} name="submit" value="Apply" onClick={this.submitClicked} />
+          <div className="input-wrapper">
+            <input type="submit" className="button" name="submit" value="Apply" onClick={this.submitClicked} />
+          </div>
 
-          <input type="hidden" name="ht" value="b6c5a22c9f143f12665a61eacd85f3a03d95f775:MTUwMzYwNjA1NS4xMjM4" />
           <input type="hidden" name="mc_signupsource" value="hosted" />
         </form>
       </div>
