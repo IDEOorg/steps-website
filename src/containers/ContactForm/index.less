@@ -1,0 +1,71 @@
+
+
+.contact_form {
+  margin: 30px 0;
+  max-width: 900px;
+  font-family: Calibre;
+
+  input[type="email"], input[type="submit"], select {
+    display: block;
+
+    @media only screen and (min-width: 890px) {
+      display: inline-block; /* Online inline if all three can fit */
+    }
+  }
+
+  input[type="email"], select {
+    width: 280px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 6px 8px;
+    padding-left: 25px;
+
+    line-height: 50px;
+    font-size: 14px;
+    color: #AAA;
+
+    border-style:solid;
+    border-width: 1px;
+    border-color: #888;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  input[type="email"].invalid {
+    border: 1px solid red;
+  }
+
+select {
+  /* NOT fully browser compatible, helps on some
+  Really the select should be custom with JS */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03LjQxIDcuODRMMTIgMTIuNDJsNC41OS00LjU4TDE4IDkuMjVsLTYgNi02LTZ6Ii8+CiAgICA8cGF0aCBkPSJNMC0uNzVoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KPC9zdmc+") no-repeat 95% center;
+}
+
+  input[type="email"], select option {
+    line-height: 25px;
+  }
+
+  input[type="submit"] {
+    margin: 6px 8px;
+    height: 50px;
+    width: 280px;
+    border-radius: 4px;
+    background-color: #18d789;
+    border-style: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    &.blue {
+      background-color: #4c79ff;
+    }
+  }
+}
