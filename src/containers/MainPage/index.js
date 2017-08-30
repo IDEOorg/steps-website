@@ -10,6 +10,7 @@ import Carousel from '../../components/Carousel';
 
 const MainPage = () => {
   const carouselImages = config.mainpage.features.carousel.map((image) => {
+    // eslint-disable-next-line
     return <img className="temp_image_class" src={require(`../../assets/${image}`)} alt="Guide" />;
   });
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {

@@ -6,7 +6,6 @@ import config from '../../data/config';
 import logo from '../../assets/steps-logo.svg';
 
 const Header = (props) => {
-  console.log(props);
   const links = config.headerbar.map((content) => {
     return (
       <a className="header_link" href={`#${content.url}`} key={content.url}>{content.name}</a>

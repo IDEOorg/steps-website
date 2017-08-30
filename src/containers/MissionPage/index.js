@@ -9,7 +9,8 @@ import ContactForm from '../ContactForm';
 const MissionPage = () => {
   const missionpage = config.missionpage;
   const acGrid = missionpage.partners.acmembers.map((member) => {
-    return <img className="mi_ac_member_image" src={require(`../../assets/aclogos/${member.imgurl}`)} alt={member.title} />
+    // eslint-disable-next-line
+    return <img className="mi_ac_member_image" src={require(`../../assets/aclogos/${member.imgurl}`)} alt={member.title} />;
   });
   return (
     <div className="mission_page">
