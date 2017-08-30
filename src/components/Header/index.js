@@ -15,7 +15,7 @@ const Header = (props) => {
   let guideButton = null;
   if (props.showGuideButton) {
     guideButton = (
-      <Button styling="header_button">
+      <Button styling="header_button" url="https://steps.ideo.org/landing-page">
         <p>TRY A GUIDE</p>
       </Button>
     );

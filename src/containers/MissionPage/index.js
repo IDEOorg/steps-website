@@ -28,7 +28,7 @@ const MissionPage = () => {
           <h2 className="about_title">{missionpage.about.title}</h2>
           <p className="about_description">{missionpage.about.description}</p>
           <div className="about_button_section">
-            <Button styling="primary_button">
+            <Button styling="primary_button" url={missionpage.about.button.url}>
               <p>{missionpage.about.button.name}</p>
             </Button>
           </div>

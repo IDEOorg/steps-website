@@ -52,7 +52,7 @@ const GetInvolvedPage = () => {
             <div className="gi_info_section">
               <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.trythempage.infobox.text}</p>
-                <Button styling="primary_button">
+                <Button styling="primary_button" url={gi.trythempage.infobox.button.url}>
                   <p>{gi.trythempage.infobox.button.text}</p>
                 </Button>
               </InfoBox>
@@ -73,7 +73,7 @@ const GetInvolvedPage = () => {
             <div className="gi_info_section left">
               <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.collabpage.infobox.text}</p>
-                <Button styling="primary_button blue">
+                <Button styling="primary_button blue" url={gi.collabpage.infobox.button.url}>
                   <p>{gi.collabpage.infobox.button.text}</p>
                 </Button>
               </InfoBox>
@@ -92,7 +92,7 @@ const GetInvolvedPage = () => {
             <div className="gi_info_section left">
               <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.codepage.infobox.text}</p>
-                <Button styling="primary_button">
+                <Button styling="primary_button" url={gi.codepage.infobox.button.url}>
                   <p>{gi.codepage.infobox.button.text}</p>
                 </Button>
               </InfoBox>

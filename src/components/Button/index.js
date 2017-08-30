@@ -4,9 +4,11 @@ import './index.less';
 
 const Button = (props) => {
   return (
-    <div className={classNames("button", props.styling)}>
-      {props.children}
-    </div>
+    <a className="button_style" href={props.url} target="_blank">
+      <div className={classNames("button", props.styling)}>
+        {props.children}
+      </div>
+    </a>
   );
 };
 
