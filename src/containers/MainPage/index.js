@@ -14,10 +14,12 @@ const MainPage = () => {
   });
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
-      const imageUrl = require(`../../assets/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
+      const imageUrl = require(`../../assets/benefits/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
       return (
-        <div key={benefit.title}>
-          <img src={imageUrl} alt="Icon" />
+        <div className="benefit" key={benefit.title}>
+          <div className="benefit_icon_box">
+            <img src={imageUrl} alt="Icon" />
+          </div>
           <h2>{benefit.title}</h2>
           <p>{benefit.description}</p>
         </div>

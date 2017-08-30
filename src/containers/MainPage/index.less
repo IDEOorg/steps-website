@@ -87,15 +87,48 @@
   }
   .benefits_box {
     padding: 6rem 0;
+    h2, p {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    p {
+      line-height: 1.33333;
+    }
   }
   .benefits_list_section {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .org_benefits_section {
     background: white;
+    h2 {
+      color: @color-gold;
+    }
+    p {
+      color: @color-text;
+    }
   }
   .community_benefits_section {
     background: @gray-background;
+    h2, p {
+      color: @color-blue;
+    }
+  }
+  .benefit {
+    width: 20%;
+    margin-top: 2.5rem;
+  }
+  .benefit_icon_box {
+    width: 100%;
+    img {
+      width: 30%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
