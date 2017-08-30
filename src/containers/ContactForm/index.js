@@ -22,16 +22,15 @@ class ContactForm extends Component {
   }
 
   render() {
+    const submitClassname = `button ${(this.props.buttonStyle === "blue" ? "blue" : "")}`;
+
     return (
       <div className="contact_form">
         <form action="https://ideo.us2.list-manage.com/subscribe/post" method="POST">
           <input type="hidden" name="u" value="177d391697939b9281ab317e0" />
           <input type="hidden" name="id" value="7b8428b00a" />
 
-          <div className="email-wrapper">
-            <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
-            <div className="email-validation-warning">Please enter a valid email address</div>
-          </div>
+          <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
 
           <select className="select-small" id="MERGE1" name="MERGE1">
             <option value="I am a service provider">I am a service provider</option>
@@ -41,7 +40,7 @@ class ContactForm extends Component {
             <option value="Other">Other</option>
           </select>
 
-          <input type="submit" className="button" name="submit" value="Apply" onClick={this.submitClicked} />
+          <input type="submit" className={submitClassname} name="submit" value="Apply" onClick={this.submitClicked} />
 
           <input type="hidden" name="ht" value="b6c5a22c9f143f12665a61eacd85f3a03d95f775:MTUwMzYwNjA1NS4xMjM4" />
           <input type="hidden" name="mc_signupsource" value="hosted" />

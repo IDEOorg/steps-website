@@ -2,17 +2,22 @@
 
 .contact_form {
   margin: 30px 0;
-  max-width: 750px;
+  max-width: 900px;
+  font-family: Calibre;
 
-  .email-wrapper {
-    display: inline-block;
+  input[type="email"], input[type="submit"], select {
+    display: block;
+
+    @media only screen and (min-width: 890px) {
+      display: inline-block; /* Online inline if all three can fit */
+    }
   }
 
   input[type="email"], select {
     width: 280px;
     height: 50px;
-    border-radius: 6px;
-    margin: 0 7px;
+    border-radius: 4px;
+    margin: 6px 8px;
     padding-left: 25px;
 
     line-height: 50px;
@@ -22,6 +27,7 @@
     border-style:solid;
     border-width: 1px;
     border-color: #888;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
   }
 
   input[type="email"].invalid {
@@ -42,24 +48,24 @@ select {
   }
 
   input[type="submit"] {
-    margin-left: 7px;
+    margin: 6px 8px;
     height: 50px;
-    width: 150px;
-    border-radius: 25px;
-    background-color: #47A;
+    width: 280px;
+    border-radius: 4px;
+    background-color: #18d789;
     border-style: none;
 
     cursor: pointer;
 
-    color: white;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #ffffff;
     text-transform: uppercase;
-  }
 
-  .email-validation-warning {
-    color: red;
-    font-size: 12px;
-    margin: 3px 10px;
-    display: none;
+    &.blue {
+      background-color: #4c79ff;
+    }
   }
 }
