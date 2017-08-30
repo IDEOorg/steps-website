@@ -48,7 +48,6 @@ class ContactForm extends Component {
             <input type="submit" className="button" name="submit" value="Apply" onClick={this.submitClicked} />
           </div>
 
-          <input type="hidden" name="ht" value="b6c5a22c9f143f12665a61eacd85f3a03d95f775:MTUwMzYwNjA1NS4xMjM4" />
           <input type="hidden" name="mc_signupsource" value="hosted" />
         </form>
       </div>
