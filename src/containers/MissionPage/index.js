@@ -8,6 +8,9 @@ import ContactForm from '../ContactForm';
 
 const MissionPage = () => {
   const missionpage = config.missionpage;
+  const acGrid = missionpage.partners.acmembers.map((member) => {
+    return <img className="mi_ac_member_image" src={require(`../../assets/aclogos/${member.imgurl}`)} alt={member.title} />
+  });
   return (
     <div className="mission_page">
       <div className="header_section mission_section">
@@ -21,9 +24,9 @@ const MissionPage = () => {
         </div>
       </div>
       <div className="about_section">
-        <div className="about_subsection">
+        <div className="mi_subsection">
           <h2 className="about_title">{missionpage.about.title}</h2>
-          <h2 className="about_description">{missionpage.about.description}</h2>
+          <p className="about_description">{missionpage.about.description}</p>
           <div className="about_button_section">
             <Button styling="primary_button">
               <p>{missionpage.about.button.name}</p>
@@ -32,6 +35,18 @@ const MissionPage = () => {
         </div>
       </div>
       <div className="partners_section">
+        <div className="mi_subsection">
+          <h2 className="about_title">{missionpage.partners.headline}</h2>
+          <p className="about_description">{missionpage.partners.description}</p>
+        </div>
+        <div className="mi_ac_members">
+          <p className="mi_tagline">{missionpage.partners.tagline}</p>
+          <div className="mi_ac_grid_wrapper">
+            <div className="mi_ac_grid">
+              {acGrid}
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

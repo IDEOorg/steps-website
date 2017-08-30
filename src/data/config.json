@@ -195,76 +195,85 @@
     "partners": {
       "headline": "Advisory Council",
       "description": "The Advisory Council is a group of 18 nonprofit and technology partners with unique perspectives and expertise on the needs and experiences of low-income communities in the U.S. They have been working with us to provide feedback on product creation, design, content and distribution strategy for all digital products within the Steps Program.",
+      "tagline": "THE ADVISORY COUNCIL IS",
       "acmembers": [
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Brownsville",
+          "imgurl": "Brownsville.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Catalyst Miami",
+          "imgurl": "Catalyst-Miami.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "CBA",
+          "imgurl": "CBA.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "CCCS",
+          "imgurl": "CCCS.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "CFSI",
+          "imgurl": "CFSI.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Compass Working Capital",
+          "imgurl": "Compass-Working-Capital.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Crisis Text Line",
+          "imgurl": "Crisis-Text-Line.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Earn",
+          "imgurl": "Earn.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Federation",
+          "imgurl": "Federation.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "The Financial Clinic",
+          "imgurl": "Financial-Clinic.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "JPMC",
+          "imgurl": "JPMC.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "Meda",
+          "imgurl": "Meda.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "National Urban League",
+          "imgurl": "National-Urban-League.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "NerdWallet",
+          "imgurl": "NerdWallet.png"
         },
         {
-          "title": "Title of Organization",
-          "url": "http://www.yahoo.com"
+          "title": "NFCC",
+          "imgurl": "NFCC.png"
+        },
+        {
+          "title": "NTFP",
+          "imgurl": "NTFP.png"
+        },
+        {
+          "title": "Propel",
+          "imgurl": "Propel.png"
+        },
+        {
+          "title": "Prosperity Now",
+          "imgurl": "Prosperity-Now.png"
+        },
+        {
+          "title": "UnidosUS",
+          "imgurl": "UnidosUS.png"
         }
       ]
-    },
-    "supportedby": {
-      "description": "The IDEO.org Steps Program is supported by JPMorgan Chase",
-      "sponsorname": "JP MORGAN CHASE"
-    },
-    "projectby": {
-      "description": "A PROJECT BY",
-      "imgurl": ""
     }
   }
 }

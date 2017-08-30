@@ -58,9 +58,13 @@ const MainPage = () => {
         {benefitsSections}
       </div>
       <div className="contact_section">
-        <h2>{mainpage.contact.title}</h2>
-        <p>{mainpage.contact.description}</p>
-        <ContactForm />
+        <div className="contact_content_section">
+          <h2>{mainpage.contact.title}</h2>
+          <p>{mainpage.contact.description}</p>
+        </div>
+        <div className="main_contact_form">
+          <ContactForm />
+        </div>
       </div>
       <Footer />
     </div>

@@ -28,33 +28,61 @@
 }
 
 .about_section {
-  background: white;
+  background: @gray-background;
   display: flex;
   justify-content: center;
   align-content: center;
+  .about_button_section {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+  }
+}
+
+.partners_section {
+  background: white;
+  .mi_ac_members {
+    .mi_tagline {
+      color: @color-dark;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.0625rem;
+      padding-bottom: 2rem;
+    }
+  }
+  .mi_ac_grid_wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .mi_ac_grid {
+    margin: 0 auto;
+    .mi_ac_member_image {
+      width: 21%;
+      height: auto;
+      margin: 1.5rem 2%;
+    }
+  }
+}
+
+.mission_page {
   p, h2 {
     text-align: center;
   }
   h2.about_title {
-    color: #19181a;
-    font-size: 3.75rem;
+    color: @color-dark;
+    font-size: 2.5rem;
     line-height: 1.1;
     letter-spacing: -0.03125rem;
     margin-bottom: 1.875rem;
   }
   p.about_description {
     color: rgba(25, 24, 26, 0.72);
-    font-size: 1.3175rem;
+    font-size: 1.25rem;
     line-height: 1.287;
   }
-  .about_subsection {
+  .mi_subsection {
     width: 60%;
     margin: 0 auto;
-    margin: 7em 0;
-  }
-  .about_button_section {
-    display: flex;
-    justify-content: center;
-    padding-top: 2em;
+    padding: 5em 0;
   }
 }
