@@ -65,7 +65,7 @@ const GetInvolvedPage = () => {
             <h2 className="gi_collab_title">{gi.collabpage.title}</h2>
             <p className="gi_collab_description">{gi.collabpage.description}</p>
           </div>
-          <ContactForm />
+          <ContactForm styleOptions={["stacked"]} />
         </div>
         <div className="gi_visual_box">
           <div className="gi_info_section_wrapper">
