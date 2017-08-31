@@ -48,7 +48,7 @@ const GetInvolvedPage = () => {
         </div>
         <div className="gi_visual_box">
           <img className="gi_visual" src={trythemImgUrl} alt={gi.trythempage.infobox.imgurl} />
-          <div className="gi_info_section_wrapper">
+          <div className="gi_info_section_wrapper gi_try_infobox">
             <div className="gi_info_section">
               <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.trythempage.infobox.text}</p>
@@ -66,10 +66,12 @@ const GetInvolvedPage = () => {
             <h2 className="gi_collab_title">{gi.collabpage.title}</h2>
             <p className="gi_collab_description">{gi.collabpage.description}</p>
           </div>
-          <ContactForm styleOptions={["stacked"]} />
+          <div className="gi_collab_form_box">
+            <ContactForm styleOptions={["stacked"]} />
+          </div>
         </div>
         <div className="gi_visual_box">
-          <div className="gi_info_section_wrapper">
+          <div className="gi_info_section_wrapper gi_collab_infobox">
             <div className="gi_info_section left">
               <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.collabpage.infobox.text}</p>
@@ -79,7 +81,7 @@ const GetInvolvedPage = () => {
               </InfoBox>
             </div>
           </div>
-          <img className="gi_visual" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
+          <img className="gi_visual right" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
         </div>
       </div>
       <div className="gi_code_page" id="steal-our-code">
@@ -88,7 +90,7 @@ const GetInvolvedPage = () => {
           <p className="gi_code_description">{gi.codepage.description}</p>
         </div>
         <div className="gi_visual_box">
-          <div className="gi_info_section_wrapper">
+          <div className="gi_info_section_wrapper gi_code_infobox">
             <div className="gi_info_section left">
               <InfoBox styling="gi_infobox">
                 <p className="gi_infobox_text">{gi.codepage.infobox.text}</p>
@@ -98,7 +100,7 @@ const GetInvolvedPage = () => {
               </InfoBox>
             </div>
           </div>
-          <img className="gi_visual" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
+          <img className="gi_visual right" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
         </div>
       </div>
       <Footer />

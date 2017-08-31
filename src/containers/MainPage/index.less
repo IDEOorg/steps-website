@@ -13,18 +13,31 @@
   }
   .header_title_section {
     width: 100%;
-    margin-bottom: 4rem;
+    .desktop({
+      margin-bottom: 4rem;
+    });
+    .mobile({
+      margin-bottom: 3rem;
+    });
   }
   .header_title {
-    width: 65%;
     margin: 0 auto;
+
     h1 {
       .title;
+      .mobile({
+        margin: 2rem 0;
+      });
     }
     p {
-      font-size: 1.25rem;
-      line-height: 1.2857;
+      .medbody;
     }
+    .desktop({
+      width: 65%;
+    });
+    .mobile({
+      width: 85%;
+    });
   }
   .button_section {
     display: flex;
@@ -33,9 +46,24 @@
 }
 
 .main_section {
-  background-image: url('../../assets/home.jpg');
-  background-color: @color-blue;
-  background-blend-mode: multiply;
+  .desktop({
+    background: transparent;
+    .video_wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+  });
+  .mobile({
+    background-image: url('../../assets/home/4K7A6718.JPG');
+    background-size: cover;
+    background-color: @color-blue;
+    background-blend-mode: multiply;
+    .video_wrapper {
+      display: none;
+    }
+  })
 }
 
 .features_section {
@@ -47,8 +75,13 @@
   h2 {
     margin: 0 auto;
     padding: 4.5rem 0 2.5rem 0;
-    font-size: 2rem;
-    width: 50%;
+    .subhuge;
+    .desktop({
+      width: 50%;
+    });
+    .mobile({
+      width: 85%;
+    });
   }
   .features_carousel {
     img.temp_image_class {
@@ -57,23 +90,31 @@
       margin: 0 auto;
       padding: 2.5rem 0;
       display: block;
+      .mobile({
+        padding: 1.75rem 0;
+      });
     }
   }
   .features_pullquote {
-    width: 65%;
     margin: 0 auto;
     padding: 3rem 0 5rem 0;
     p.author {
       color: @color-gold;
-      font-size: 1rem;
+      .smallbody;
       text-align: center;
       margin-top: 1rem;
     }
     p.pullquote {
       color: white;
-      font-size: 1.25rem;
-      line-height: 1.25;
+      .largebody;
     }
+    .desktop({
+      width: 65%;
+    });
+    .mobile({
+      width: 85%;
+      padding: 2rem 0;
+    });
   }
 }
 
@@ -81,10 +122,10 @@
   background: white;
   h6 {
     text-transform: uppercase;
-    color: #4A4A4A;
+    color: #4a4a4a;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
+    .smallbody;
+    font-weight: 500;
     letter-spacing: 0.0625rem;
   }
   .benefits_box {
@@ -94,15 +135,25 @@
       margin-top: 1rem;
     }
     p {
-      line-height: 1.33333;
+      .smallbody;
+      width: 75%;
+      margin: 1rem auto;
     }
+    h2 {
+      .largebody;
+    }
+    .mobile({
+      padding: 4rem 0;
+    });
   }
   .benefits_list_section {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    .desktop({
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    });
   }
   .org_benefits_section {
     background: white;
@@ -120,16 +171,26 @@
     }
   }
   .benefit {
-    width: 20%;
     margin-top: 2.5rem;
+    .desktop({
+      width: 20%;
+    });
+    .mobile({
+      width: 100%;
+    });
   }
   .benefit_icon_box {
     width: 100%;
     img {
-      width: 30%;
       height: auto;
       display: block;
       margin: 0 auto;
+      .desktop({
+        width: 30%;
+      });
+      .mobile({
+        width: 18%;
+      });
     }
   }
 }
@@ -142,18 +203,22 @@
   padding-top: 4rem;
   .contact_content_section {
     margin: 0 auto;
-    width: 52%;
     p, h2 {
       text-align: center;
     }
     h2 {
-      font-size: 2.5rem;
+      .subhuge;
       margin-bottom: 1.25rem;
     }
     p {
-      font-size: 1.25rem;
-      line-height: 1.2875;
+      .medbody;
     }
+    .mobile({
+      width: 85%;
+    });
+    .desktop({
+      width: 52%;
+    });
   }
 }
 
@@ -161,4 +226,7 @@
   display: flex;
   justify-content: center;
   padding: 3rem 0;
+  .mobile({
+    padding: 0;
+  });
 }

@@ -1,4 +1,5 @@
 @import '../../globals/constants.less';
+@import '../../globals/responsive.less';
 
 .button_style {
   text-decoration: none;
@@ -7,13 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.16);
+  box-shadow: @box-shadow;
   border-radius: 0.25em;
   p {
     color: white;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 0.0625rem;
+    font-weight: 500;
+    .smalltext;
   }
   &:hover {
     opacity: 0.85;

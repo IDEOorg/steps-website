@@ -1,4 +1,5 @@
 @import '../../globals/constants.less';
+@import '../../globals/responsive.less';
 
 .app {
   @viewport {
@@ -19,15 +20,26 @@
 }
 .header_subsection {
   height: ~"calc(100% - @{header-height})";
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  .desktop({
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  });
+  .mobile({
+
+  });
 }
 
 .primary_button {
-  height: 4em;
-  width: 12.5em;
+  .desktop({
+    height: 4em;
+    width: 12em;
+  });
+  .mobile({
+    height: 3.75em;
+    width: 10em;
+  });
   background: @color-green;
   p {
     color: white;

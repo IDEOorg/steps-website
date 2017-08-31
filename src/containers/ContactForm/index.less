@@ -1,19 +1,24 @@
-
+@import '../../globals/constants.less';
+@import '../../globals/responsive.less';
 
 .contact_form {
   margin: 30px auto;
   max-width: 900px;
-  font-family: Calibre;
   text-align: center;
 
   .input-wrapper {
     display: block;
     margin: 0 auto;
-    padding: 6px 8px;
 
     @media only screen and (min-width: 890px) {
       display: inline-block; /* Online inline if all three can fit */
     }
+    .desktop({
+      padding: 6px 0.5rem;
+    });
+    .mobile({
+      padding-bottom: 0.5rem;
+    });
   }
 
   /* Force vertical if the parent component specifies stacked */
@@ -22,20 +27,18 @@
   }
 
   input[type="email"], select {
-    width: 280px;
-    height: 50px;
-    border-radius: 4px;
-    padding-left: 25px;
+    width: 100%;
+    height: 3.125rem;
+    border-radius: 0.25rem;
+    padding-left: 1.5rem;
 
+    .smalltext;
     line-height: 50px;
-    font-size: 14px;
     color: #AAA;
 
     background-color: white;
-    border-style:solid;
-    border-width: 1px;
-    border-color: rgba(251,251,251,0.08);
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(251,251,251,0.08);
+    box-shadow: @box-shadow;
   }
 
   input[type="email"].invalid {
@@ -45,8 +48,6 @@
 select {
   /* NOT fully browser compatible, helps on some
   Really the select should be custom with JS */
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background-color: white !important;
   background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03LjQxIDcuODRMMTIgMTIuNDJsNC41OS00LjU4TDE4IDkuMjVsLTYgNi02LTZ6Ii8+CiAgICA8cGF0aCBkPSJNMC0uNzVoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KPC9zdmc+") no-repeat 95% center;
@@ -58,23 +59,27 @@ select {
 
   input[type="submit"] {
     height: 50px;
-    width: 280px;
     border-radius: 4px;
-    background-color: #18d789;
+    background-color: @color-blue;
     border-style: none;
     display: inline-block;
 
     cursor: pointer;
 
-    font-size: 16px;
+    .smallbody;
     font-weight: 500;
-    letter-spacing: 1.1px;
     text-align: center;
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
+    .desktop({
+      width: 280px;
+    });
+    .mobile({
+      width: 100%;
+    });
   }
 
   &.blueButton input[type="submit"] {
-    background-color: #4c79ff;
+    background-color: @color-blue;
   }
 }
