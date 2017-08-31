@@ -1,10 +1,8 @@
 @import '../../globals/constants.less';
 
 .header {
-  background-color: rgba(0,0,0,0);
-  width: 92%;
   height: @header-height;
-  margin: 0 3.5%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,4 +29,19 @@
     background: #4c79ff;
     margin-left: 2rem;
   }
+  .desktop({
+    width: 92%;
+    .menu_icon {
+      display: none;
+    }
+  });
+  .mobile({
+    width: 86%;
+    .menu_icon {
+      cursor: pointer;
+    }
+    .links_content {
+      display: none;
+    }
+  });
 }
