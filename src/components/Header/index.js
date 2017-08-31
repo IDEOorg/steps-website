@@ -39,7 +39,7 @@ export default class Header extends Component {
     }
 
     return (
-      <div className={classNames("header", this.props.styling)}>
+      <div className={classNames("header", this.props.styling, this.state.isExpanded ? "header_expanded" : null)}>
         <div className="logo_section">
           <a href="#/">
             <img src={logo} alt="Steps Logo" />
@@ -52,7 +52,7 @@ export default class Header extends Component {
           >
             {iconShown}
           </div>
-          <div className="links_content">
+          <div className={classNames("links_content", this.state.isExpanded ? "content_expanded" : null)}>
             {links}
             {guideButton}
           </div>

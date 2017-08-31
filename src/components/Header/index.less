@@ -34,14 +34,49 @@
     .menu_icon {
       display: none;
     }
+    .links_content {
+      display: flex;
+      align-items: center;
+    }
   });
   .mobile({
-    width: 86%;
+    width: 100%;
+    padding: 0 7%;
     .menu_icon {
       cursor: pointer;
     }
     .links_content {
       display: none;
+    }
+  });
+}
+.header_expanded {
+  .mobile({
+    background: @color-dark;
+  });
+}
+.content_expanded {
+  .mobile({
+    position: absolute;
+    top: @header-height;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 2rem;
+    a.header_link {
+      display: block;
+      color: #4a4a4a;
+      text-align: right;
+      font-weight: 500;
+      width: 100%;
+      margin-bottom: 1.5rem;
+      &:hover {
+        color: #4a4a4a;
+        opacity: 0.85;
+      }
     }
   });
 }
