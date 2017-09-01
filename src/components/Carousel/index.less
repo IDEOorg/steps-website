@@ -1,1 +1,104 @@
 @import '../../globals/constants.less';
+@import "~slick-carousel/slick/slick.css";
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: 100px auto;
+
+  .slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    outline: 0;
+    border: 0px solid transparent;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.slick-prev {
+      left: -10%;
+      background-image: url('../../assets/carousel/prev.png');
+    }
+
+    &.slick-next {
+      right: -10%;
+      background-image: url('../../assets/carousel/next.png');
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    top: -40px - 36px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      display: inline-block;
+      margin: 0 12px;
+      opacity: 0.6;
+
+      &.slick-active {
+        opacity: 1;
+      }
+
+      button {
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        outline: 0;
+        border: solid 1px #d8d8d8;
+        border-radius: 18px;
+      }
+    }
+  }
+}
+
+.carousel__frame {
+  .slick-list {
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.carousel__slide {
+  position: relative;
+  width: 100%;
+  > img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.carousel__overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.5s all ease-in-out;
+    transition-delay: 1.0s;
+  }
+}
