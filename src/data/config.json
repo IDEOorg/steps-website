@@ -1,10 +1,6 @@
 {
   "headerbar": [
     {
-      "name": "HOME",
-      "url": "/home"
-    },
-    {
       "name": "GET INVOLVED",
       "url": "/get-involved"
     },
