@@ -34,6 +34,11 @@
           "carousel/home-4",
           "carousel/home-5",
           "carousel/home-6"
+        ],
+        "mobile": [
+          "carousel/home-m-1",
+          "carousel/home-m-2",
+          "carousel/home-m-3"
         ]
       }
     },

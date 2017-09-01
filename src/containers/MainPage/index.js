@@ -10,6 +10,7 @@ import Carousel from '../../components/Carousel';
 
 const MainPage = () => {
   const carouselSlidesDesktop = config.mainpage.features.carousel.desktop;
+  const carouselSlidesMobile = config.mainpage.features.carousel.mobile;
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
       const imageUrl = require(`../../assets/benefits/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
@@ -68,7 +69,12 @@ const MainPage = () => {
       <div className="features_section">
         <h2>{mainpage.features.title}</h2>
         <div className="features_carousel">
-          <Carousel slides={carouselSlidesDesktop} />
+          <div className="carousel--desktop">
+            <Carousel slides={carouselSlidesDesktop} />
+          </div>
+          <div className="carousel--mobile">
+            <Carousel slides={carouselSlidesMobile} />
+          </div>
         </div>
         <div className="features_pullquote">
           <p className="pullquote">{mainpage.features.pullquote}</p>

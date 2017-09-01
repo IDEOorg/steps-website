@@ -83,17 +83,15 @@
       width: 85%;
     });
   }
-  .features_carousel {
-    img.temp_image_class {
-      width: 70%;
-      height: auto;
-      margin: 0 auto;
-      padding: 2.5rem 0;
-      display: block;
-      .mobile({
-        padding: 1.75rem 0;
-      });
-    }
+  .carousel--desktop {
+    .mobile({
+      display: none;
+    });
+  }
+  .carousel--mobile {
+    .desktop({
+      display: none;
+    });
   }
   .features_pullquote {
     margin: 0 auto;
