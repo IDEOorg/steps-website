@@ -1,6 +1,10 @@
 {
   "headerbar": [
     {
+      "name": "HOME",
+      "url": "/home"
+    },
+    {
       "name": "GET INVOLVED",
       "url": "/get-involved"
     },
@@ -117,8 +121,8 @@
           "anchor": "collaborate"
         },
         {
-          "title": "Steal our code",
-          "anchor": "steal-our-code"
+          "title": "Use our code",
+          "anchor": "use-our-code"
         }
       ]
     },
@@ -182,10 +186,10 @@
     },
     "convergencepage": {
       "title": "Convergence",
-      "description": "When we have an idea that feels right, we create a series of  prototypes in a few directions based in common threads from our research. Then we send them into the world for people to utilize. In this phase we gain valuable insights about the demographics of our audience and let their preferences dictate user experience for the next iteration.",
+      "description": "When we have an idea that feels right, we create a series of prototypes in a few directions based in common threads from our research. Then we send them into the world for people to utilize. In this phase we gain valuable insights about the demographics of our audience and let their preferences dictate user experience for the next iteration.",
       "infobox": {
-        "title": "MINUTE APP",
-        "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
+        "title": "DoubleCheck.org",
+        "description": "We launched Facebook ads to test 3 prototypes under a “text-a-coach” delivery method. DoubleCheck.org was the most successful, however all 3 gave us a better understanding of who exactly our audience was, what their core needs are, and to which design attributes they were drawn."
       },
       "imgurl": "convergence.png"
     },

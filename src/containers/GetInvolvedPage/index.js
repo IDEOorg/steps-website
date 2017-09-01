@@ -89,7 +89,7 @@ const GetInvolvedPage = () => {
           <img className="gi_visual right desktop" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
         </div>
       </div>
-      <div className="gi_code_page" id="steal-our-code">
+      <div className="gi_code_page" id="use-our-code">
         <div className="gi_code_page_content">
           <h2 className="gi_code_title">{gi.codepage.title}</h2>
           <p className="gi_code_description">{gi.codepage.description}</p>
