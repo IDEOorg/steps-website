@@ -185,7 +185,7 @@
     color: @color-dark;
     .subhuge;
     .mobile({
-      margin-bottom: 1rem;      
+      margin-bottom: 1rem;
     });
   }
   .gi_code_description {
@@ -209,7 +209,7 @@
   height: auto;
   .mobile({
     width: 80%;
-    padding-bottom: 60%;
+    padding-bottom: 70%;
   });
 }
 .gi_visual.right {
@@ -251,6 +251,12 @@
 
 .gi_infobox {
   box-shadow: @box-shadow;
+  .mobile({
+    .button {
+      margin: 0 auto;
+      width: 100%;
+    }
+  });
 }
 p.gi_infobox_text {
   color: @color-dark;
