@@ -46,13 +46,13 @@ const MainPage = () => {
   //   }
   // };
 
-/*
-<div className="video_wrapper">
-  <video autoPlay muted loop ref={(vid) => { adjustVideoSpeed(vid, 0.7); }}>
-    <source src="../../assets/phonesv2.mp4" type="video/mp4" />
-  </video>
-</div>
-*/
+  /*
+  <div className="video_wrapper">
+    <video autoPlay muted loop ref={(vid) => { adjustVideoSpeed(vid, 0.7); }}>
+      <source src="../../assets/phonesv2.mp4" type="video/mp4" />
+    </video>
+  </div>
+  */
 
   const mainpage = config.mainpage;
   return (

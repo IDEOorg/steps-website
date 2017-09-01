@@ -36,6 +36,14 @@
   &.stacked .input-wrapper {
     display: block !important;
   }
+  &.stacked {
+    .email, .person_type, .form_button {
+      .desktop({
+        width: 100%;
+        padding-right: 5%;
+      });
+    }
+  }
 
   input[type="email"], select {
     width: 100%;

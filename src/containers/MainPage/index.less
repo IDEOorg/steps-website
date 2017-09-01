@@ -95,13 +95,15 @@
   }
   .features_carousel {
     img.temp_image_class {
+      .desktop({
+        box-shadow: @box-shadow;        
+      });
       width: 70%;
       height: auto;
-      margin: 0 auto;
-      padding: 2.5rem 0;
+      margin: 2.5rem auto;
       display: block;
       .mobile({
-        padding: 1.75rem 0;
+        margin: 1.75rem auto;
       });
     }
   }
