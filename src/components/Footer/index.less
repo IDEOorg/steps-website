@@ -11,7 +11,12 @@
       text-align: center;
     }
     img.about_ideo_logo {
-      width: 12rem;
+      .desktop({
+        width: 12rem;
+      });
+      .mobile({
+        width: 9rem;        
+      });
       height: auto;
       margin: 0.5rem auto;
       display: block;

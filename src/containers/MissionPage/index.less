@@ -2,19 +2,21 @@
 @import '../../globals/responsive.less';
 
 .mission_page {
-  height: 100%;
+  .desktop({
+    height: 100%;
+  });
 }
 
 .mission_subsection_wrapper {
   width: 75%;
-  margin: 0 auto;
+  margin: 2rem auto;
   h2, p {
     text-align: center;
     color: white;
   }
   .mission_tagline {
     .medbody;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
   }
   .mission_statement {
     .subhuge;
@@ -25,6 +27,7 @@
   background-image: url('../../assets/mission.jpg');
   background-color: @color-green;
   background-blend-mode: multiply;
+  padding-bottom: 2rem;
 }
 
 .about_section {
@@ -38,7 +41,17 @@
     padding-top: 2em;
   }
 }
-
+.mi_subsection {
+  .desktop({
+    width: 60%;
+    padding: 5em 0;
+  });
+  .mobile({
+    width: 85%;
+    padding: 2.5rem 0;
+  });
+  margin: 0 auto;
+}
 .partners_section {
   background: white;
   .mi_ac_members {
@@ -46,7 +59,9 @@
       color: @color-dark;
       font-weight: 500;
       .smalltext;
-      padding-bottom: 2rem;
+      .desktop({
+        padding-bottom: 2rem;
+      });
     }
   }
   .mi_ac_grid_wrapper {
@@ -55,10 +70,27 @@
   }
   .mi_ac_grid {
     margin: 0 auto;
+    .ac_image_box {
+      .desktop({
+        display: inline-block;
+        width: 21%;
+        margin: 1.5rem 2%;
+      });
+      .mobile({
+        padding: 3rem 0 3rem 0;
+        border-bottom: 1px solid rgb(220,220,220);
+      });
+    }
     .mi_ac_member_image {
-      width: 21%;
+      .desktop({
+        width: 100%;
+      });
+      .mobile({
+        width: 66.66%;
+        margin: 0 auto;
+        display: block;
+      });
       height: auto;
-      margin: 1.5rem 2%;
     }
   }
 }
@@ -75,10 +107,5 @@
   p.about_description {
     color: rgba(25, 24, 26, 0.72);
     .medbody;
-  }
-  .mi_subsection {
-    width: 60%;
-    margin: 0 auto;
-    padding: 5em 0;
   }
 }

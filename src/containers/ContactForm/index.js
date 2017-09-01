@@ -30,11 +30,11 @@ class ContactForm extends Component {
           <input type="hidden" name="u" value="177d391697939b9281ab317e0" />
           <input type="hidden" name="id" value="7b8428b00a" />
 
-          <div className="input-wrapper">
+          <div className="input-wrapper email">
             <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
           </div>
 
-          <div className="input-wrapper">
+          <div className="input-wrapper person_type">
             <select className="select-small" id="MERGE1" name="MERGE1">
               <option value="I am a service provider">I am a service provider</option>
               <option value="I am a network">I am a network</option>
@@ -44,7 +44,7 @@ class ContactForm extends Component {
             </select>
           </div>
 
-          <div className="input-wrapper">
+          <div className="input-wrapper form_button">
             <input type="submit" className="button" name="submit" value="Apply" onClick={this.submitClicked} />
           </div>
 
