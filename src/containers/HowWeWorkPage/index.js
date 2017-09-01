@@ -14,6 +14,7 @@ const HowWeWorkPage = () => {
   const howwework = config.howwework;
   return (
     <div className="how_we_work_page">
+      <div className="hww_bg_img" />
       <Header showGuideButton />
       <div className="hww_header_section">
         <h1 className="hww_title">{howwework.mainpage.title}</h1>

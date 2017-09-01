@@ -49,3 +49,14 @@
 .primary_button.blue {
   background: @color-blue;
 }
+
+.mobile {
+  .desktop({
+    display: none !important;
+  });
+}
+.desktop {
+  .mobile({
+    display: none !important;
+  });
+}

@@ -24,9 +24,17 @@
 }
 
 .mission_section {
-  background-image: url('../../assets/mission.jpg');
-  background-color: @color-green;
-  background-blend-mode: multiply;
+  .desktop({
+    background-image: url('../../assets/mission.jpg');
+    background-color: @color-green;
+    background-blend-mode: multiply;
+  });
+  .mobile({
+    background-image: url('../../assets/mission-home-mobile.jpg');
+    background-color: @color-green;
+    background-blend-mode: multiply;
+    background-size: 100% auto;
+  });
   padding-bottom: 2rem;
 }
 

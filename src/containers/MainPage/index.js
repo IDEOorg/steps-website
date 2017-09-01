@@ -11,7 +11,11 @@ import Carousel from '../../components/Carousel';
 const MainPage = () => {
   const carouselImages = config.mainpage.features.carousel.map((image) => {
     // eslint-disable-next-line
-    return <img className="temp_image_class" src={require(`../../assets/${image}`)} alt="Guide" />;
+    return <img className="temp_image_class desktop" src={require(`../../assets/home/carousel/${image}`)} alt="Guide" />;
+  });
+  const carouselImagesMobile = config.mainpage.features.carouselmobile.map((image) => {
+    // eslint-disable-next-line
+    return <img className="temp_image_class mobile" src={require(`../../assets/home/carousel/${image}`)} alt="Guide" />;
   });
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
@@ -35,22 +39,25 @@ const MainPage = () => {
       </div>
     );
   });
-  const adjustVideoSpeed = (v, rate) => {
-    const video = v;
-    if (video) {
-      video.playbackRate = rate;
-    }
-  };
+  // const adjustVideoSpeed = (v, rate) => {
+  //   const video = v;
+  //   if (video) {
+  //     video.playbackRate = rate;
+  //   }
+  // };
+
+/*
+<div className="video_wrapper">
+  <video autoPlay muted loop ref={(vid) => { adjustVideoSpeed(vid, 0.7); }}>
+    <source src="../../assets/phonesv2.mp4" type="video/mp4" />
+  </video>
+</div>
+*/
 
   const mainpage = config.mainpage;
   return (
     <div className="wrapper main_page">
       <div className="header_section main_section">
-        <div className="video_wrapper">
-          <video autoPlay muted loop ref={(vid) => { adjustVideoSpeed(vid, 0.7); }}>
-            <source src="../../assets/phonesv2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <Header showGuideButton={false} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper">
@@ -73,6 +80,7 @@ const MainPage = () => {
         <div className="features_carousel">
           <Carousel />
           {carouselImages}
+          {carouselImagesMobile}
         </div>
         <div className="features_pullquote">
           <p className="pullquote">{mainpage.features.pullquote}</p>

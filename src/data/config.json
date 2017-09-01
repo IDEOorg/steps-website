@@ -33,6 +33,14 @@
         "Guides-4.png",
         "Guides-5.png",
         "Guides-6.png"
+      ],
+      "carouselmobile": [
+        "Guides-m-1.png",
+        "Guides-m-2.png",
+        "Guides-m-3.png",
+        "Guides-m-4.png",
+        "Guides-m-5.png",
+        "Guides-m-6.png"
       ]
     },
     "benefits": {
@@ -123,7 +131,8 @@
           "text": "TRY OUR GUIDES",
           "url": "https://steps.ideo.org/landing-page"
         },
-        "imgurl": "landing-page.png"
+        "imgurl": "landing-page.png",
+        "imgurlmobile": "gi-steps-mobile.png"
       }
     },
     "collabpage": {
@@ -135,7 +144,8 @@
           "text": "NERDWALLET GUIDES",
           "url": "https://www.nerdwallet.com/blog/steps-to-financial-health/"
         },
-        "imgurl": "nerdwallet.png"
+        "imgurl": "nerdwallet.png",
+        "imgurlmobile": "gi-nw-mobile.png"
       }
     },
     "codepage": {
@@ -147,7 +157,8 @@
           "text": "VIEW GUIDES ON GITHUB",
           "url": "https://github.com/ideoorg"
         },
-        "imgurl": "take-our-code-mobile.png"
+        "imgurl": "take-our-code.png",
+        "imgurlmobile": "gi-code-mobile.png"
       }
     }
   },

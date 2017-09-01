@@ -49,7 +49,7 @@
 
 .main_section {
   .desktop({
-    background-image: url('../../assets/home.jpg');
+    background-image: url('../../assets/home/home0.jpg');
     background-size: cover;
     background-color: @color-blue;
     background-blend-mode: multiply;
@@ -65,7 +65,7 @@
     // }
   });
   .mobile({
-    background-image: url('../../assets/home/home.jpg');
+    background-image: url('../../assets/home/home0-mobile.jpg');
     background-size: cover;
     background-color: @color-blue;
     background-blend-mode: multiply;
@@ -206,10 +206,18 @@
 }
 
 .contact_section {
-  background-image: url('../../assets/home2.jpg');
-  background-size: cover;
-  background-color: @color-green;
-  background-blend-mode: multiply;
+  .desktop({
+    background-image: url('../../assets/home/home1.jpg');
+    background-size: cover;
+    background-color: @color-green;
+    background-blend-mode: multiply;
+  });
+  .mobile({
+    background-image: url('../../assets/home/home1-mobile.jpg');
+    background-size: cover;
+    background-color: @color-green;
+    background-blend-mode: multiply;
+  });
   padding-top: 4rem;
   .contact_content_section {
     margin: 0 auto;
@@ -234,10 +242,6 @@
 
 .main_contact_form {
   padding: 3rem 0;
-  .desktop({
-    display: flex;
-    justify-content: center;
-  });
   .mobile({
     width: 85%;
     margin: 0 auto;
