@@ -7,12 +7,12 @@ import ContactForm from '../ContactForm';
 import InfoBox from '../../components/InfoBox';
 import Button from '../../components/Button';
 
-const trythemImgUrl = require(`../../assets/${config.getinvolved.trythempage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
-const trythemImgUrlMobile = require(`../../assets/${config.getinvolved.trythempage.infobox.imgurlmobile}`); // eslint-disable-line import/no-dynamic-require
-const collabImgUrl = require(`../../assets/${config.getinvolved.collabpage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
-const collabImgUrlMobile = require(`../../assets/${config.getinvolved.collabpage.infobox.imgurlmobile}`); // eslint-disable-line import/no-dynamic-require
-const codeImgUrl = require(`../../assets/${config.getinvolved.codepage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
-const codeImgUrlMobile = require(`../../assets/${config.getinvolved.codepage.infobox.imgurlmobile}`); // eslint-disable-line import/no-dynamic-require
+const trythemImgUrl = config.getinvolved.trythempage.infobox.imgurl;
+const trythemImgUrlMobile = config.getinvolved.trythempage.infobox.imgurlmobile;
+const collabImgUrl = config.getinvolved.collabpage.infobox.imgurl;
+const collabImgUrlMobile = config.getinvolved.collabpage.infobox.imgurlmobile;
+const codeImgUrl = config.getinvolved.codepage.infobox.imgurl;
+const codeImgUrlMobile = config.getinvolved.codepage.infobox.imgurlmobile;
 const onAnchorClick = (anchor) => {
   document.getElementById(anchor).scrollIntoView();
 };

@@ -5,10 +5,9 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import InfoBox from '../../components/InfoBox';
 import Button from '../../components/Button';
-// eslint-disable-next-line
-const convergenceImg = require('../../assets/' + config.howwework.convergencepage.imgurl);
-// eslint-disable-next-line
-const ideationImg = require('../../assets/' + config.howwework.ideationpage.imgurl);
+
+const convergenceImg = config.howwework.convergencepage.imgurl;
+const ideationImg = config.howwework.ideationpage.imgurl;
 
 const HowWeWorkPage = () => {
   const howwework = config.howwework;

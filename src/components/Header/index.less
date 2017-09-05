@@ -16,8 +16,8 @@
     justify-content: flex-end;
     align-items: center;
   }
-  .header_link {
-    color: white;
+  a.header_link {
+    color: white !important;
     text-decoration: none;
     margin-left: 2rem;
     &:hover {
@@ -29,6 +29,10 @@
     width: 8.75rem;
     background: #4c79ff;
     margin-left: 2rem;
+    &:hover {
+      background: rgb(51,102,255);
+      color: rgb(241,241,241);
+    }
   }
   .desktop({
     width: 92%;
@@ -69,13 +73,13 @@
     padding: 2rem;
     a.header_link {
       display: block;
-      color: #4a4a4a;
+      color: #4a4a4a !important;
       text-align: right;
       font-weight: 500;
       width: 100%;
       margin-bottom: 1.5rem;
       &:hover {
-        color: #4a4a4a;
+        color: #4a4a4a !important;
         opacity: 0.85;
       }
       &:last-child {

@@ -27,20 +27,20 @@
       "pullquote": "\"These tools can be used to find resources without asking a financial coach. Our clients could use this in the months between their appointments, or in times of crisis. Also, we have people that come to our workshops who are not eligible to enroll in our coaching programs. This is a tool we could share with them.\"",
       "pullquoteauthor": "— Phuong Luong, Financial Coach",
       "carousel": [
-        "Guides-1.png",
-        "Guides-2.png",
-        "Guides-3.png",
-        "Guides-4.png",
-        "Guides-5.png",
-        "Guides-6.png"
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd68f7e0ab08ae59856f/1504623982284/Guides-1.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd69bebafb5b86981e12/1504623983290/Guides-2.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd69e5dd5b60a9dfc20f/1504623982273/Guides-3.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6ae6f2e1ebbcf67954/1504623984165/Guides-4.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6b579fb377b9bc2efc/1504623985288/Guides-5.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6bc027d8c39a4030a2/1504623988905/Guides-6.png"
       ],
       "carouselmobile": [
-        "Guides-m-1.png",
-        "Guides-m-2.png",
-        "Guides-m-3.png",
-        "Guides-m-4.png",
-        "Guides-m-5.png",
-        "Guides-m-6.png"
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6ce45a7ccfd0dc0b01/1504623984401/Guides-m-1.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6ce45a7ccfd0dc0b02/1504623982519/Guides-m-2.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6cc027d8c39a4030b6/1504623982875/Guides-m-3.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6c03596e9ba07d3ea2/1504623982867/Guides-m-4.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6df43b55d571bb9cea/1504623982961/Guides-m-5.png",
+        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6de5dd5b60a9dfc226/1504623985072/Guides-m-6.png"
       ]
     },
     "benefits": {
@@ -131,8 +131,8 @@
           "text": "TRY OUR GUIDES",
           "url": "https://steps.ideo.org/landing-page"
         },
-        "imgurl": "landing-page.png",
-        "imgurlmobile": "gi-steps-mobile.png"
+        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14aff7c507dd94fd58d/1504624977569/landing-page.png",
+        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144f9a61ed3bf9b76c6/1504624980820/gi-steps-mobile.png"
       }
     },
     "collabpage": {
@@ -144,8 +144,8 @@
           "text": "NERDWALLET GUIDES",
           "url": "https://www.nerdwallet.com/blog/steps-to-financial-health/"
         },
-        "imgurl": "nerdwallet.png",
-        "imgurlmobile": "gi-nw-mobile.png"
+        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14acd0f68609f91e994/1504624979189/nerdwallet.png",
+        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1438419c2d149aa5f75/1504624977252/gi-nw-mobile.png"
       }
     },
     "codepage": {
@@ -157,8 +157,8 @@
           "text": "VIEW GUIDES ON GITHUB",
           "url": "https://github.com/ideoorg"
         },
-        "imgurl": "take-our-code.png",
-        "imgurlmobile": "gi-code-mobile.png"
+        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14f4c0dbfcb520f11fe/1504624977855/take-our-code.png",
+        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec143893fc0f529eb7cd6/1504624969803/gi-code-mobile.png"
       }
     }
   },
@@ -178,7 +178,7 @@
         "title": "MINUTE APP",
         "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
       },
-      "imgurl": "ideation.png"
+      "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144e5dd5b60a9dffdb3/1504624968268/ideation.png"
     },
     "convergencepage": {
       "title": "Convergence",
@@ -187,7 +187,7 @@
         "title": "DoubleCheck.org",
         "description": "We launched Facebook ads to test 3 prototypes under a “text-a-coach” delivery method. DoubleCheck.org was the most successful, however all 3 gave us a better understanding of who exactly our audience was, what their core needs are, and to which design attributes they were drawn."
       },
-      "imgurl": "convergence.png"
+      "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1437131a5e567935970/1504624969531/convergence.png"
     },
     "adoptionpage": {
       "title": "Adoption",

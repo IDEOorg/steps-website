@@ -11,12 +11,12 @@ import Carousel from '../../components/Carousel';
 const MainPage = () => {
   const carouselImages = config.mainpage.features.carousel.map((image) => {
     // eslint-disable-next-line
-    return <img className="temp_image_class desktop" src={require(`../../assets/home/carousel/${image}`)} alt="Guide" />;
+    return <img className="temp_image_class desktop" src={image} alt="Guide" />;
   });
 
   const carouselImagesMobile = config.mainpage.features.carouselmobile.map((image) => {
     // eslint-disable-next-line
-    return <img className="temp_image_class mobile" src={require(`../../assets/home/carousel/${image}`)} alt="Guide" />;
+    return <img className="temp_image_class mobile" src={image} alt="Guide" />;
   });
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
