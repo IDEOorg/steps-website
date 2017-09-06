@@ -31,7 +31,7 @@ class ContactForm extends Component {
           <input type="hidden" name="id" value="7b8428b00a" />
 
           <div className="input-wrapper email">
-            <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
+            <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Your email address" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
           </div>
 
           <div className="input-wrapper person_type">
