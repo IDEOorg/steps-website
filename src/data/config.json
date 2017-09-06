@@ -47,27 +47,27 @@
       "benefitssections": [
         {
           "cssClass": "org_benefits_section",
-          "title": "BENEFITS FOR YOUR ORGANIZATION",
+          "title": "BENEFITS FOR YOU",
           "benefits": [
             {
               "imageurl": "people.svg",
               "title": "Reach more people",
-              "description": "By creating guided digital and interactive experiences that mirror financial coaching."
+              "description": "Guides remove multiple barriers that keep people from receiving help."
             },
             {
               "imageurl": "support.svg",
               "title": "24/7 Support",
-              "description": "Financial crisis can strike at any moment. And it’s those unexpected and vulnerable ."
+              "description": "A digital guide can provide round-the-clock support when in-person isn’t available."
             },
             {
               "imageurl": "customizable.svg",
               "title": "Customizable",
-              "description": "We are actively collaborating with partners to customize tools to an organization."
+              "description": "We can adjust tools for things like titles, languages, links to resources and more."
             },
             {
               "imageurl": "access.svg",
               "title": "Free to Access",
-              "description": "Free for the community and available for everyone that can find them useful."
+              "description": "The entire suite of digital guides are free and available for everyone to use."
             }
           ]
         },
@@ -76,19 +76,19 @@
           "title": "BENEFITS FOR YOUR COMMUNITY",
           "benefits": [
             {
-              "imageurl": "simple.svg",
-              "title": "Simple to Use",
-              "description": "Most people are unaware of the wealth of resources at their disposal."
-            },
-            {
               "imageurl": "selfservice.svg",
               "title": "Self-Service",
               "description": "Money is difficult to talk about, and it’s hard to ask for help when you need it."
             },
             {
+              "imageurl": "simple.svg",
+              "title": "Simple & Personalized",
+              "description": "Guides start at a recognizable problem and then lead users to a personalized solution."
+            },
+            {
               "imageurl": "solutions.svg",
               "title": "Actionable Solutions",
-              "description": "Each digital guide starts with an easy to understand and recognizable problem."
+              "description": "Long-term action plans are broken down into bite-sized, achievable steps."
             }
           ]
         }
