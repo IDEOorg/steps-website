@@ -45,7 +45,7 @@ class ContactForm extends Component {
           </div>
 
           <div className="input-wrapper form_button">
-            <input type="submit" className="button" name="submit" value="Apply" onClick={this.submitClicked} />
+            <input type="submit" className="button" name="submit" value="Reach Out" onClick={this.submitClicked} />
           </div>
 
           <input type="hidden" name="mc_signupsource" value="hosted" />
