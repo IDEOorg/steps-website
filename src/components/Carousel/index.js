@@ -3,17 +3,6 @@ import Slider from 'react-slick';
 import './index.less';
 
 class Carousel extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      currentSlide: 0
-    };
-
-    this.beforeChange = this.beforeChange.bind(this);
-    this.afterChange = this.afterChange.bind(this);
-  }
-
   componentDidMount() {
     setTimeout(() => {
       // slick initial sizing bug ref: https://github.com/akiran/react-slick/issues/809
@@ -21,22 +10,9 @@ class Carousel extends Component {
     }, 0);
   }
 
-  beforeChange() {
-    this.setState({ currentSlide: null });
-  }
-
-  afterChange(currentSlide) {
-    this.setState({ currentSlide });
-  }
-
   render() {
-    const overlays = this.props.slides.map((imageName, index) => {
-      const overlayClasses = `carousel__overlay ${index === this.state.currentSlide ? 'active' : ''}`;
-      return <img className={overlayClasses} src={require(`../../assets/${imageName}.png`)} />; // eslint-disable-line
-    });
-
-    const images = this.props.slides.map((imageName, index) => {
-      const image = <img src={require(`../../assets/${imageName}.jpg`)} />; // eslint-disable-line
+    const images = this.props.slides.map((imageName) => {
+      const image = <img src={require(`../../assets/${imageName}`)} />; // eslint-disable-line
       return (
         <div className="carousel__slide" key={imageName}>
           {image}
@@ -46,7 +22,7 @@ class Carousel extends Component {
 
     const settings = {
       adaptiveHeight: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
       dots: true,
       infinite: true,
@@ -59,9 +35,6 @@ class Carousel extends Component {
 
     return (
       <div className="carousel">
-        <div className="carousel__overlays">
-          {overlays}
-        </div>
         <Slider className="carousel__frame" {...settings} ref={(c) => { this.slick = c; }}>
           {images}
         </Slider>

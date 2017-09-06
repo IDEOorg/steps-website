@@ -28,17 +28,20 @@
       "pullquoteauthor": "— Phuong Luong, Financial Coach",
       "carousel": {
         "desktop": [
-          "carousel/home-1",
-          "carousel/home-2",
-          "carousel/home-3",
-          "carousel/home-4",
-          "carousel/home-5",
-          "carousel/home-6"
+          "carousel/home-1.jpg",
+          "carousel/home-2.jpg",
+          "carousel/home-3.jpg",
+          "carousel/home-4.jpg",
+          "carousel/home-5.jpg",
+          "carousel/home-6.jpg"
         ],
         "mobile": [
-          "carousel/home-m-1",
-          "carousel/home-m-2",
-          "carousel/home-m-3"
+          "carousel/home-m-1.png",
+          "carousel/home-m-2.png",
+          "carousel/home-m-3.png",
+          "carousel/home-m-4.png",
+          "carousel/home-m-5.png",
+          "carousel/home-m-6.png"
         ]
       }
     },
