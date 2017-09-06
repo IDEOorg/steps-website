@@ -33,22 +33,25 @@ const MainPage = () => {
       </div>
     );
   });
-  const adjustVideoSpeed = (v, rate) => {
-    const video = v;
-    if (video) {
-      video.playbackRate = rate;
-    }
-  };
+  // const adjustVideoSpeed = (v, rate) => {
+  //   const video = v;
+  //   if (video) {
+  //     video.playbackRate = rate;
+  //   }
+  // };
+
+  /*
+  <div className="video_wrapper">
+    <video autoPlay muted loop ref={(vid) => { adjustVideoSpeed(vid, 0.7); }}>
+      <source src="../../assets/phonesv2.mp4" type="video/mp4" />
+    </video>
+  </div>
+  */
 
   const mainpage = config.mainpage;
   return (
     <div className="wrapper main_page">
       <div className="header_section main_section">
-        <div className="video_wrapper">
-          <video autoPlay muted loop ref={(vid) => { adjustVideoSpeed(vid, 0.7); }}>
-            <source src="../../assets/phonesv2.mp4" type="video/mp4" />
-          </video>
-        </div>
         <Header showGuideButton={false} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper">

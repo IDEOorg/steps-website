@@ -7,9 +7,12 @@ import ContactForm from '../ContactForm';
 import InfoBox from '../../components/InfoBox';
 import Button from '../../components/Button';
 
-const trythemImgUrl = require(`../../assets/${config.getinvolved.trythempage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
-const collabImgUrl = require(`../../assets/${config.getinvolved.collabpage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
-const codeImgUrl = require(`../../assets/${config.getinvolved.codepage.infobox.imgurl}`); // eslint-disable-line import/no-dynamic-require
+const trythemImgUrl = config.getinvolved.trythempage.infobox.imgurl;
+const trythemImgUrlMobile = config.getinvolved.trythempage.infobox.imgurlmobile;
+const collabImgUrl = config.getinvolved.collabpage.infobox.imgurl;
+const collabImgUrlMobile = config.getinvolved.collabpage.infobox.imgurlmobile;
+const codeImgUrl = config.getinvolved.codepage.infobox.imgurl;
+const codeImgUrlMobile = config.getinvolved.codepage.infobox.imgurlmobile;
 const onAnchorClick = (anchor) => {
   document.getElementById(anchor).scrollIntoView();
 };
@@ -47,7 +50,8 @@ const GetInvolvedPage = () => {
           <p>{gi.trythempage.description}</p>
         </div>
         <div className="gi_visual_box">
-          <img className="gi_visual" src={trythemImgUrl} alt={gi.trythempage.infobox.imgurl} />
+          <img className="gi_visual mobile" src={trythemImgUrlMobile} alt={gi.trythempage.infobox.imgurlmobile} />
+          <img className="gi_visual desktop" src={trythemImgUrl} alt={gi.trythempage.infobox.imgurl} />
           <div className="gi_info_section_wrapper gi_try_infobox">
             <div className="gi_info_section">
               <InfoBox styling="gi_infobox">
@@ -81,10 +85,11 @@ const GetInvolvedPage = () => {
               </InfoBox>
             </div>
           </div>
-          <img className="gi_visual right" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
+          <img className="gi_visual right mobile" src={collabImgUrlMobile} alt={gi.collabpage.infobox.imgurl} />
+          <img className="gi_visual right desktop" src={collabImgUrl} alt={gi.collabpage.infobox.imgurl} />
         </div>
       </div>
-      <div className="gi_code_page" id="steal-our-code">
+      <div className="gi_code_page" id="use-our-code">
         <div className="gi_code_page_content">
           <h2 className="gi_code_title">{gi.codepage.title}</h2>
           <p className="gi_code_description">{gi.codepage.description}</p>
@@ -100,7 +105,8 @@ const GetInvolvedPage = () => {
               </InfoBox>
             </div>
           </div>
-          <img className="gi_visual right" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
+          <img className="gi_visual right mobile" src={codeImgUrlMobile} alt={gi.codepage.infobox.imgurl} />
+          <img className="gi_visual right desktop" src={codeImgUrl} alt={gi.codepage.infobox.imgurl} />
         </div>
       </div>
       <Footer />

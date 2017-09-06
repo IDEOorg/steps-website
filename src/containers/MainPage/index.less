@@ -2,7 +2,9 @@
 @import '../../globals/responsive.less';
 
 .main_page {
-  height: 100%;
+  .desktop({
+    height: 100%;
+  });
 }
 
 .header_section {
@@ -47,23 +49,31 @@
 
 .main_section {
   .desktop({
-    background: transparent;
-    .video_wrapper {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: -1;
-    }
-  });
-  .mobile({
-    background-image: url('../../assets/home/4K7A6718.JPG');
+    background-image: url('https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59a9ce1ae6f2e1b7a62e60cf/1504300617823/home0.jpg');
     background-size: cover;
     background-color: @color-blue;
     background-blend-mode: multiply;
     .video_wrapper {
       display: none;
     }
-  })
+    // background: transparent;
+    // .video_wrapper {
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   z-index: -1;
+    // }
+  });
+  .mobile({
+    background-image: url('https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59a9ce54bebafb51aebd595d/1504300631302/home0-mobile.jpg');
+    background-size: cover;
+    background-color: @color-blue;
+    background-blend-mode: multiply;
+    .video_wrapper {
+      display: none;
+    }
+    padding-bottom: 4.5rem;
+  });
 }
 
 .features_section {
@@ -97,7 +107,7 @@
     margin: 0 auto;
     padding: 3rem 0 5rem 0;
     p.author {
-      color: @color-gold;
+      color: white;
       .smallbody;
       text-align: center;
       margin-top: 1rem;
@@ -194,10 +204,18 @@
 }
 
 .contact_section {
-  background-image: url('../../assets/home2.jpg');
-  background-size: cover;
-  background-color: @color-green;
-  background-blend-mode: multiply;
+  .desktop({
+    background-image: url('https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59a9ce5dcf81e0da6a37eff1/1504300637598/home1.jpg');
+    background-size: cover;
+    background-color: @color-green;
+    background-blend-mode: multiply;
+  });
+  .mobile({
+    background-image: url('https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59a9ce62ff7c50ca6fff5d2d/1504300643074/home1-mobile.jpg');
+    background-size: cover;
+    background-color: @color-green;
+    background-blend-mode: multiply;
+  });
   padding-top: 4rem;
   .contact_content_section {
     margin: 0 auto;
@@ -221,10 +239,9 @@
 }
 
 .main_contact_form {
-  display: flex;
-  justify-content: center;
   padding: 3rem 0;
   .mobile({
-    padding: 0;
+    width: 85%;
+    margin: 0 auto;
   });
 }

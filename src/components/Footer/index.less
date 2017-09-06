@@ -7,11 +7,17 @@
     margin: 0 auto;
     p.about_ideo_logo_text {
       color: #d8d8d8;
+      margin-bottom: 1.25rem;
       .tinytext;
       text-align: center;
     }
     img.about_ideo_logo {
-      width: 12rem;
+      .desktop({
+        width: 12rem;
+      });
+      .mobile({
+        width: 9rem;
+      });
       height: auto;
       margin: 0.5rem auto;
       display: block;

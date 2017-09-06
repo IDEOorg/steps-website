@@ -5,10 +5,9 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import InfoBox from '../../components/InfoBox';
 import Button from '../../components/Button';
-// eslint-disable-next-line
-const convergenceImg = require('../../assets/' + config.howwework.convergencepage.imgurl);
-// eslint-disable-next-line
-const ideationImg = require('../../assets/' + config.howwework.ideationpage.imgurl);
+
+const convergenceImg = config.howwework.convergencepage.imgurl;
+const ideationImg = config.howwework.ideationpage.imgurl;
 
 const HowWeWorkPage = () => {
   const howwework = config.howwework;
@@ -33,9 +32,6 @@ const HowWeWorkPage = () => {
         </div>
       </div>
       <div className="hww_convergence">
-        <div className="hww_visual">
-          <img className="hww_visual_img" src={convergenceImg} alt={convergenceImg} />
-        </div>
         <div className="hww_content">
           <h2>{howwework.convergencepage.title}</h2>
           <p className="description">{howwework.convergencepage.description}</p>
@@ -43,6 +39,9 @@ const HowWeWorkPage = () => {
             <h6>{howwework.convergencepage.infobox.title}</h6>
             <p>{howwework.convergencepage.infobox.description}</p>
           </InfoBox>
+        </div>
+        <div className="hww_visual">
+          <img className="hww_visual_img" src={convergenceImg} alt={convergenceImg} />
         </div>
       </div>
       <div className="hww_adoption">

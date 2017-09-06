@@ -101,8 +101,8 @@
       }
     },
     "contact": {
-      "title": "Curious? Let's help you utilize Steps",
-      "description": "We have been actively working with various organizations that could benefit from the tools we’ve created. If you feel like you could partner with us, reach out and let’s start the conversation."
+      "title": "We can help you utilize Steps.",
+      "description": "Our team has been actively working with organizations that could benefit from the tools we’ve created. If you feel you could partner with us, reach out and let’s start the conversation."
     }
   },
   "getinvolved": {
@@ -119,8 +119,8 @@
           "anchor": "collaborate"
         },
         {
-          "title": "Steal our code",
-          "anchor": "steal-our-code"
+          "title": "Use our code",
+          "anchor": "use-our-code"
         }
       ]
     },
@@ -133,7 +133,8 @@
           "text": "TRY OUR GUIDES",
           "url": "https://steps.ideo.org/landing-page"
         },
-        "imgurl": "landing-page.png"
+        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14aff7c507dd94fd58d/1504624977569/landing-page.png",
+        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144f9a61ed3bf9b76c6/1504624980820/gi-steps-mobile.png"
       }
     },
     "collabpage": {
@@ -145,7 +146,8 @@
           "text": "NERDWALLET GUIDES",
           "url": "https://www.nerdwallet.com/blog/steps-to-financial-health/"
         },
-        "imgurl": "nerdwallet.png"
+        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14acd0f68609f91e994/1504624979189/nerdwallet.png",
+        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1438419c2d149aa5f75/1504624977252/gi-nw-mobile.png"
       }
     },
     "codepage": {
@@ -157,7 +159,8 @@
           "text": "VIEW GUIDES ON GITHUB",
           "url": "https://github.com/ideoorg"
         },
-        "imgurl": "take-our-code.png"
+        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14f4c0dbfcb520f11fe/1504624977855/take-our-code.png",
+        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec143893fc0f529eb7cd6/1504624969803/gi-code-mobile.png"
       }
     }
   },
@@ -177,16 +180,16 @@
         "title": "MINUTE APP",
         "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
       },
-      "imgurl": "ideation.png"
+      "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144e5dd5b60a9dffdb3/1504624968268/ideation.png"
     },
     "convergencepage": {
       "title": "Convergence",
-      "description": "When we have an idea that feels right, we create a series of  prototypes in a few directions based in common threads from our research. Then we send them into the world for people to utilize. In this phase we gain valuable insights about the demographics of our audience and let their preferences dictate user experience for the next iteration.",
+      "description": "When we have an idea that feels right, we create a series of prototypes in a few directions based in common threads from our research. Then we send them into the world for people to utilize. In this phase we gain valuable insights about the demographics of our audience and let their preferences dictate user experience for the next iteration.",
       "infobox": {
-        "title": "MINUTE APP",
-        "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
+        "title": "DoubleCheck.org",
+        "description": "We launched Facebook ads to test 3 prototypes under a “text-a-coach” delivery method. DoubleCheck.org was the most successful, however all 3 gave us a better understanding of who exactly our audience was, what their core needs are, and to which design attributes they were drawn."
       },
-      "imgurl": "convergence.png"
+      "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1437131a5e567935970/1504624969531/convergence.png"
     },
     "adoptionpage": {
       "title": "Adoption",

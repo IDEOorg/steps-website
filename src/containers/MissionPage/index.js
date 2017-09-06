@@ -10,7 +10,11 @@ const MissionPage = () => {
   const missionpage = config.missionpage;
   const acGrid = missionpage.partners.acmembers.map((member) => {
     // eslint-disable-next-line
-    return <img className="mi_ac_member_image" src={require(`../../assets/aclogos/${member.imgurl}`)} alt={member.title} />;
+    return (
+      <div className="ac_image_box">
+        <img className="mi_ac_member_image" src={require(`../../assets/aclogos/${member.imgurl}`)} alt={member.title} />
+      </div>
+    );
   });
   return (
     <div className="mission_page">

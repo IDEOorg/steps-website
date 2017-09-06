@@ -8,7 +8,9 @@ const Footer = () => {
     <div className="about_ideo_section">
       <div className="about_ideo_logo_box">
         <p className="about_ideo_logo_text">A PROJECT BY</p>
-        <img className="about_ideo_logo" src={logo} alt="Logo" />
+        <a href="http://www.ideo.org">
+          <img className="about_ideo_logo" src={logo} alt="Logo" />
+        </a>
       </div>
     </div>
   );

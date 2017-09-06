@@ -39,6 +39,7 @@
   .anchor_link_styling {
     display: flex;
     opacity: 0.7;
+    border-radius: 0.25rem;
     cursor: pointer;
     p {
       color: @color-dark;
@@ -169,6 +170,20 @@
   });
 }
 
+.gi_collab_form_box {
+  margin: 0 auto;
+  .desktop({
+    width: 30%;
+  });
+  .button {
+    width: 100%;
+    &:hover {
+      background: rgb(51,102,255);
+      color: rgb(241,241,241);
+    }
+  }
+}
+
 .gi_code_page {
   background: white;
   .desktop({
@@ -185,7 +200,7 @@
     color: @color-dark;
     .subhuge;
     .mobile({
-      margin-bottom: 1rem;      
+      margin-bottom: 1rem;
     });
   }
   .gi_code_description {
@@ -207,9 +222,11 @@
 .gi_visual {
   width: 65%;
   height: auto;
+  box-shadow: @box-shadow;
+  border-radius: 0.25rem;
   .mobile({
     width: 80%;
-    padding-bottom: 60%;
+    margin-bottom: 6rem;
   });
 }
 .gi_visual.right {
@@ -251,6 +268,12 @@
 
 .gi_infobox {
   box-shadow: @box-shadow;
+  .mobile({
+    .button {
+      margin: 0 auto;
+      width: 100%;
+    }
+  });
 }
 p.gi_infobox_text {
   color: @color-dark;
