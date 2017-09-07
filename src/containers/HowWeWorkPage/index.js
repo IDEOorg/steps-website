@@ -23,8 +23,8 @@ const HowWeWorkPage = () => {
           <h2>{howwework.ideationpage.title}</h2>
           <p className="description">{howwework.ideationpage.description}</p>
           <InfoBox styling={"hww_infobox"}>
-            <h6>{howwework.ideationpage.infobox.title}</h6>
-            <p>{howwework.ideationpage.infobox.description}</p>
+            <h6 className="hww_infobox_title">{howwework.ideationpage.infobox.title}</h6>
+            <p className="hww_infobox_description">{howwework.ideationpage.infobox.description}</p>
           </InfoBox>
         </div>
         <div className="hww_visual">
@@ -36,8 +36,8 @@ const HowWeWorkPage = () => {
           <h2>{howwework.convergencepage.title}</h2>
           <p className="description">{howwework.convergencepage.description}</p>
           <InfoBox styling={"hww_infobox"}>
-            <h6>{howwework.convergencepage.infobox.title}</h6>
-            <p>{howwework.convergencepage.infobox.description}</p>
+            <h6 className="hww_infobox_title">{howwework.convergencepage.infobox.title}</h6>
+            <p className="hww_infobox_description">{howwework.convergencepage.infobox.description}</p>
           </InfoBox>
         </div>
         <div className="hww_visual">
