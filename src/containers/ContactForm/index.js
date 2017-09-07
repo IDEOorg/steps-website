@@ -7,6 +7,11 @@ class ContactForm extends Component {
 
     this.state = {emailIsValid: true};
     this.submitClicked = this.submitClicked.bind(this);
+    this.onEmailChange = this.onEmailChange.bind(this);
+  }
+
+  onEmailChange() {
+    this.setState({emailIsValid: true});
   }
 
   submitClicked(e) {
@@ -23,6 +28,7 @@ class ContactForm extends Component {
 
   render() {
     const formClassname = `contact_form ${(this.props.styleOptions != null ? this.props.styleOptions.join(" ") : "")}`;
+    const emailWarningClassName = `email-invalid-warning ${this.state.emailIsValid ? "" : "invalid"}`;
 
     return (
       <div className={formClassname}>
@@ -31,7 +37,10 @@ class ContactForm extends Component {
           <input type="hidden" name="id" value="7b8428b00a" />
 
           <div className="input-wrapper email">
-            <input className={this.state.emailIsValid ? "" : "invalid"} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Your email address" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
+            <input onChange={this.onEmailChange} ref={(input) => { this.emailInput = input; }} type="email" placeholder="Your email address" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" />
+            <div className={emailWarningClassName}>
+              Sorry, this is not a valid email address
+            </div>
           </div>
 
           <div className="input-wrapper person_type">

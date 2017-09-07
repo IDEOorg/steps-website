@@ -5,6 +5,7 @@
   margin: 0 auto;
   max-width: 900px;
   text-align: center;
+  vertical-align: top;
 
   .email, .person_type {
     .desktop({
@@ -17,9 +18,11 @@
       width: 20%;
     });
   }
+
   .input-wrapper {
     display: block;
     margin: 0 auto;
+    vertical-align: top;
 
     @media only screen and (min-width: 890px) {
       display: inline-block; /* Online inline if all three can fit */
@@ -53,15 +56,26 @@
 
     .smalltext;
     line-height: 50px;
-    color: #999999;
 
     background-color: white;
     border: 1px solid rgba(251,251,251,0.08);
     box-shadow: @box-shadow;
   }
 
-  input[type="email"].invalid {
-    border: 1px solid red;
+  .email-invalid-warning {
+    display: none;
+    margin-top: 12px;
+    margin-left: 12px;
+    font-family: Calibre;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: left;
+    color: #ff5a4f;
+
+    &.invalid {
+      display: block;
+    }
   }
 
 select {
