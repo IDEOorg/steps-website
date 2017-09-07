@@ -12,7 +12,7 @@ class Carousel extends Component {
 
   render() {
     const images = this.props.slides.map((imageName) => {
-      const image = <img src={require(`../../assets/${imageName}`)} />; // eslint-disable-line
+      const image = <img src={imageName} />; // eslint-disable-line
       return (
         <div className="carousel__slide" key={imageName}>
           {image}

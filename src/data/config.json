@@ -28,20 +28,20 @@
       "pullquoteauthor": "— Phuong Luong, Financial Coach",
       "carousel": {
         "desktop": [
-          "carousel/home-1.jpg",
-          "carousel/home-2.jpg",
-          "carousel/home-3.jpg",
-          "carousel/home-4.jpg",
-          "carousel/home-5.jpg",
-          "carousel/home-6.jpg"
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a624f7e0abec5d032a00/1504814630366/home-1.jpg",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a624cd39c304a11c44e4/1504814629721/home-2.jpg",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a62403596ecddfd276be/1504814634740/home-3.jpg",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a6258dd04187fcca6de8/1504814633389/home-4.jpg",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a68b9f7456da598eb8a6/1504814735414/home-5.jpg",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a6258dd04187fcca6ded/1504814634099/home-6.jpg"
         ],
         "mobile": [
-          "carousel/home-m-1.png",
-          "carousel/home-m-2.png",
-          "carousel/home-m-3.png",
-          "carousel/home-m-4.png",
-          "carousel/home-m-5.png",
-          "carousel/home-m-6.png"
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a62637c581fbf85bc11e/1504814633304/home-m-1.png",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a626d7bdce0ff5ff1e50/1504814632108/home-m-2.png",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a626cd39c304a11c44e9/1504814633140/home-m-3.png",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a6e2d2b85729bb95eaf4/1504814820847/home-m-4.png",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a627e3df28d5739d5190/1504814633159/home-m-5.png",
+          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a627f5e231475662b923/1504814637055/home-m-6.png"
         ]
       }
     },
