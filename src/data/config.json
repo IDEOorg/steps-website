@@ -26,22 +26,24 @@
       "title": "47% of Americans don’t have $400 in emergency savings. We designed digital solutions from their perspective. ",
       "pullquote": "\"Our clients could use this in the months between their appointments, or in times of crisis.\"",
       "pullquoteauthor": "— Phuong Luong, Financial Coach",
-      "carousel": [
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd68f7e0ab08ae59856f/1504623982284/Guides-1.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd69bebafb5b86981e12/1504623983290/Guides-2.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd69e5dd5b60a9dfc20f/1504623982273/Guides-3.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6ae6f2e1ebbcf67954/1504623984165/Guides-4.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6b579fb377b9bc2efc/1504623985288/Guides-5.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6bc027d8c39a4030a2/1504623988905/Guides-6.png"
-      ],
-      "carouselmobile": [
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6ce45a7ccfd0dc0b01/1504623984401/Guides-m-1.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6ce45a7ccfd0dc0b02/1504623982519/Guides-m-2.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6cc027d8c39a4030b6/1504623982875/Guides-m-3.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6c03596e9ba07d3ea2/1504623982867/Guides-m-4.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6df43b55d571bb9cea/1504623982961/Guides-m-5.png",
-        "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aebd6de5dd5b60a9dfc226/1504623985072/Guides-m-6.png"
-      ]
+      "carousel": {
+        "desktop": [
+          "carousel/home-1.jpg",
+          "carousel/home-2.jpg",
+          "carousel/home-3.jpg",
+          "carousel/home-4.jpg",
+          "carousel/home-5.jpg",
+          "carousel/home-6.jpg"
+        ],
+        "mobile": [
+          "carousel/home-m-1.png",
+          "carousel/home-m-2.png",
+          "carousel/home-m-3.png",
+          "carousel/home-m-4.png",
+          "carousel/home-m-5.png",
+          "carousel/home-m-6.png"
+        ]
+      }
     },
     "benefits": {
       "benefitssections": [

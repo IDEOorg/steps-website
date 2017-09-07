@@ -9,15 +9,8 @@ import Footer from '../../components/Footer';
 import Carousel from '../../components/Carousel';
 
 const MainPage = () => {
-  const carouselImages = config.mainpage.features.carousel.map((image) => {
-    // eslint-disable-next-line
-    return <img className="temp_image_class desktop" src={image} alt="Guide" />;
-  });
-
-  const carouselImagesMobile = config.mainpage.features.carouselmobile.map((image) => {
-    // eslint-disable-next-line
-    return <img className="temp_image_class mobile" src={image} alt="Guide" />;
-  });
+  const carouselSlidesDesktop = config.mainpage.features.carousel.desktop;
+  const carouselSlidesMobile = config.mainpage.features.carousel.mobile;
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
       const imageUrl = require(`../../assets/benefits/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
@@ -79,9 +72,12 @@ const MainPage = () => {
       <div className="features_section">
         <h2>{mainpage.features.title}</h2>
         <div className="features_carousel">
-          <Carousel />
-          {carouselImages}
-          {carouselImagesMobile}
+          <div className="carousel--desktop">
+            <Carousel slides={carouselSlidesDesktop} />
+          </div>
+          <div className="carousel--mobile">
+            <Carousel slides={carouselSlidesMobile} />
+          </div>
         </div>
         <div className="features_pullquote">
           <p className="pullquote">{mainpage.features.pullquote}</p>

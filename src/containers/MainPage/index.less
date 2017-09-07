@@ -93,19 +93,15 @@
       width: 85%;
     });
   }
-  .features_carousel {
-    img.temp_image_class {
-      .desktop({
-        box-shadow: @box-shadow;
-      });
-      width: 70%;
-      height: auto;
-      margin: 2.5rem auto;
-      display: block;
-      .mobile({
-        margin: 1.75rem auto;
-      });
-    }
+  .carousel--desktop {
+    .mobile({
+      display: none;
+    });
+  }
+  .carousel--mobile {
+    .desktop({
+      display: none;
+    });
   }
   .features_pullquote {
     margin: 0 auto;

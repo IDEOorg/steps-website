@@ -1,1 +1,116 @@
 @import '../../globals/constants.less';
+@import "~slick-carousel/slick/slick.css";
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: 100px auto;
+
+  .mobile({
+    margin: 40px auto;
+    width: 100%;
+  });
+
+  .slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    outline: 0;
+    border: 0px solid transparent;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+
+    .mobile({
+      display: none !important;
+    });
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.slick-prev {
+      left: -10%;
+      background-image: url('../../assets/carousel/prev.png');
+    }
+
+    &.slick-next {
+      right: -10%;
+      background-image: url('../../assets/carousel/next.png');
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    top: -40px - 36px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .mobile({
+      top: -30px;
+    });
+
+    > li {
+      display: inline-block;
+      margin: 0 12px;
+      opacity: 0.6;
+
+      .mobile({
+        margin: 0 6px;
+      });
+
+      &.slick-active {
+        opacity: 1;
+      }
+
+      button {
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        outline: 0;
+        border: solid 1px #d8d8d8;
+        border-radius: 18px;
+        .mobile({
+          width: 9px;
+          height: 9px;
+          padding: 0;
+          margin: 0;
+          overflow: hidden;
+          background: white;
+        });
+      }
+    }
+  }
+}
+
+.carousel__frame {
+  z-index: 1;
+  .desktop({
+    .slick-list {
+      border-radius: 8px;
+      background-color: #f6f6f6;
+      box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.5);
+    }
+  })
+}
+
+.carousel__slide {
+  position: relative;
+  width: 100%;
+  > img {
+    display: block;
+    width: 100%;
+  }
+}
