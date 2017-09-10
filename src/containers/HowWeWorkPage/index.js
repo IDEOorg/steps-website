@@ -13,10 +13,12 @@ const HowWeWorkPage = () => {
   const howwework = config.howwework;
   return (
     <div className="how_we_work_page">
-      <Header showGuideButton />
-      <div className="hww_header_section">
-        <h1 className="hww_title">{howwework.mainpage.title}</h1>
-        <p className="hww_description">{howwework.mainpage.description}</p>
+      <div className="hww_header">
+        <Header showGuideButton />
+        <div className="hww_header_section">
+          <h1 className="hww_title">{howwework.mainpage.title}</h1>
+          <p className="hww_description">{howwework.mainpage.description}</p>
+        </div>
       </div>
       <div className="hww_ideation">
         <div className="hww_content">
