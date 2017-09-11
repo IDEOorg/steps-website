@@ -18,6 +18,17 @@ class HowWeWorkPage extends Component {
 
   render() {
     const howwework = config.howwework;
+    const videoThumbs = howwework.videos.map((video) => {
+      return (
+        <a
+          className="video_thumb"
+          href={`https://player.vimeo.com/video/${video.videoId}?title=0&byline=0&portrait=0&autoplay=1`}
+        >
+          <img src={video.thumbnail} alt={video.title} />
+          {video.title}
+        </a>
+      );
+    });
     return (
       <div className="how_we_work_page">
         <div className="hww_header">
@@ -35,6 +46,9 @@ class HowWeWorkPage extends Component {
             </div>
           </div>
           { this.state.showGallery ? <VideoGallery videos={howwework.videos} /> : null }
+          <div className="hww_video_thumbs_mobile">
+            {videoThumbs}
+          </div>
         </div>
         <div className="hww_ideation">
           <div className="hww_content">
