@@ -173,6 +173,28 @@
         "videolink": "meh"
       }
     },
+    "videos": [
+      {
+        "videoId": 183198466,
+        "thumbnail": "https://i.vimeocdn.com/video/592708457.webp",
+        "title": "Money is hard to talk about"
+      },
+      {
+        "videoId": 65997083,
+        "thumbnail": "https://i.vimeocdn.com/video/437230753.webp",
+        "title": "Actionable steps are needed to reach goals"
+      },
+      {
+        "videoId": 183198466,
+        "thumbnail": "https://i.vimeocdn.com/video/592708457.webp",
+        "title": "Disadvantages compound, it’s hard to get ahead"
+      },
+      {
+        "videoId": 65997083,
+        "thumbnail": "https://i.vimeocdn.com/video/437230753.webp",
+        "title": "Money is more than just numbers"
+      }
+    ],
     "ideationpage": {
       "title": "Ideation",
       "description": "The next phase of our design process is about ideas, lots of them. We spend time thinking about all the ones that are too crazy to work and too crazy not to try. Then we invite some of the same people we met during our initial research to tell us what they think. This helps us refine our thinking and narrow down solid directions.",
