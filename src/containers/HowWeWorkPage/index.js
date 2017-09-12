@@ -20,13 +20,17 @@ class HowWeWorkPage extends Component {
     const howwework = config.howwework;
     const videoThumbs = howwework.videos.map((video) => {
       return (
-        <a
-          className="video_thumb"
-          href={`https://player.vimeo.com/video/${video.videoId}?title=0&byline=0&portrait=0&autoplay=1`}
-        >
-          <img src={video.thumbnail} alt={video.title} />
-          {video.title}
-        </a>
+        <div className="video_thumb">
+          <div className="iframe_container">
+            <iframe
+              src={`https://player.vimeo.com/video/${video.videoId}?title=0&byline=0&portrait=0`}
+              title={video.title}
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
+          <p>{video.title}</p>
+        </div>
       );
     });
     return (
