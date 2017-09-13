@@ -7,6 +7,7 @@ import Button from '../../components/Button';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Carousel from '../../components/Carousel';
+import VideoBackground from '../../components/VideoBackground';
 
 const MainPage = () => {
   const carouselSlidesDesktop = config.mainpage.features.carousel.desktop;
@@ -52,6 +53,7 @@ const MainPage = () => {
   return (
     <div className="wrapper main_page">
       <div className="header_section main_section">
+        <VideoBackground src={mainpage.header.video} />
         <Header showGuideButton={false} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper">
