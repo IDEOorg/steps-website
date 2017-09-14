@@ -20,7 +20,7 @@ class HowWeWorkPage extends Component {
     const howwework = config.howwework;
     const videoThumbs = howwework.videos.map((video) => {
       return (
-        <div className="video_thumb">
+        <div className="video_thumb" key={video.videoId}>
           <div className="iframe_container">
             <iframe
               src={`https://player.vimeo.com/video/${video.videoId}?title=0&byline=0&portrait=0`}
@@ -33,6 +33,15 @@ class HowWeWorkPage extends Component {
         </div>
       );
     });
+    let videoGallery = null;
+    if (this.state.showGallery) {
+      videoGallery = (
+        <VideoGallery
+          videos={howwework.videos}
+          onFinished={() => { this.setState({ showGallery: false }); }}
+        />
+      );
+    }
     return (
       <div className="how_we_work_page">
         <div className="hww_header">
@@ -49,7 +58,7 @@ class HowWeWorkPage extends Component {
               </div>
             </div>
           </div>
-          { this.state.showGallery ? <VideoGallery videos={howwework.videos} /> : null }
+          {videoGallery}
           <div className="hww_video_thumbs_mobile">
             {videoThumbs}
           </div>

@@ -11,7 +11,7 @@ class Vimeo extends Component {
     };
 
     this.vimeoPlayer = new Player(this.iframe, options);
-    this.vimeoPlayer.on('ended', (data) => {
+    this.vimeoPlayer.on('ended', () => {
       if (typeof this.props.onEnded === 'function') {
         this.props.onEnded();
       }
