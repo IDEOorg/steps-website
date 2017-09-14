@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Carousel from '../../components/Carousel';
 
-const MainPage = () => {
+const MainPage = (props) => {
   const carouselSlidesDesktop = config.mainpage.features.carousel.desktop;
   const carouselSlidesMobile = config.mainpage.features.carousel.mobile;
   const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
@@ -52,7 +52,7 @@ const MainPage = () => {
   return (
     <div className="wrapper main_page">
       <div className="header_section main_section">
-        <Header showGuideButton={false} />
+        <Header showGuideButton={false} path={props.route.path} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper">
             <div className="header_title_section">

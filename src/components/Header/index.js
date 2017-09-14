@@ -14,14 +14,20 @@ export default class Header extends Component {
   }
   render() {
     const links = config.headerbar.map((content) => {
+      let isActive = false;
+      if (content.url === this.props.path) {
+        isActive = true;
+      }
       return (
-        <a className="header_link" href={`#${content.url}`} key={content.url}>{content.name}</a>
+        <div>
+          <a className={classNames({header_link: true, active_header_link: isActive})} href={`#${content.url}`} key={content.url}>{content.name}</a>
+        </div>
       );
     });
     let guideButton = null;
     if (this.props.showGuideButton) {
       guideButton = (
-        <Button styling="header_button" url="https://steps.ideo.org/landing-page">
+        <Button styling="header_button" url="https://steps.ideo.org/guides">
           <p>TRY A GUIDE</p>
         </Button>
       );

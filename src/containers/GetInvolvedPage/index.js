@@ -17,7 +17,7 @@ const onAnchorClick = (anchor) => {
   document.getElementById(anchor).scrollIntoView();
 };
 
-const GetInvolvedPage = () => {
+const GetInvolvedPage = (props) => {
   const gi = config.getinvolved;
   const steps = gi.mainpage.steps.map((step, i) => {
     return (
@@ -33,7 +33,7 @@ const GetInvolvedPage = () => {
   return (
     <div className="get_involved_page">
       <div className="gi_header_section">
-        <Header showGuideButton />
+        <Header showGuideButton path={props.route.path} />
         <div className="gi_title_text">
           <h1>{gi.mainpage.title}</h1>
         </div>

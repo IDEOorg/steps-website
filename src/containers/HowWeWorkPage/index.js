@@ -9,11 +9,11 @@ import Button from '../../components/Button';
 const convergenceImg = config.howwework.convergencepage.imgurl;
 const ideationImg = config.howwework.ideationpage.imgurl;
 
-const HowWeWorkPage = () => {
+const HowWeWorkPage = (props) => {
   const howwework = config.howwework;
   return (
     <div className="how_we_work_page">
-      <Header showGuideButton />
+      <Header showGuideButton path={props.route.path} />
       <div className="hww_header_section">
         <h1 className="hww_title">{howwework.mainpage.title}</h1>
         <p className="hww_description">{howwework.mainpage.description}</p>

@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import ContactForm from '../ContactForm';
 
-const MissionPage = () => {
+const MissionPage = (props) => {
   const missionpage = config.missionpage;
   const acGrid = missionpage.partners.acmembers.map((member) => {
     // eslint-disable-next-line
@@ -19,7 +19,7 @@ const MissionPage = () => {
   return (
     <div className="mission_page">
       <div className="header_section mission_section">
-        <Header showGuideButton />
+        <Header showGuideButton path={props.route.path} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper mission_subsection_wrapper">
             <p className="mission_tagline">{missionpage.contact.tagline}</p>
