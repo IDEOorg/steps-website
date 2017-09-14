@@ -26,6 +26,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@vimeo/player": "2.2.0",
     "classnames": "2.2.5",
     "object-assign": "4.1.0",
     "prop-types": "^15.5.6",
