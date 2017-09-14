@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import Cover from '../Cover';
 import Vimeo from '../Vimeo';
 import './index.less';
 
@@ -57,7 +58,9 @@ class VideoGallery extends Component {
         <div className="video_thumbs">
           {videoThumbs}
         </div>
-        {vimeos[this.activeIndex()]}
+        <Cover width={16} height={9}>
+          {vimeos[this.activeIndex()]}
+        </Cover>
       </div>
     );
   }
