@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Vimeo from '../Vimeo';
 import './index.less';
 
 class VideoGallery extends Component {
@@ -7,16 +8,40 @@ class VideoGallery extends Component {
     this.state = {
       activeVideo: props.videos[0]
     };
+
+    this.vimeoPlayers = this.vimeoPlayers.bind(this);
+    this.activeIndex = this.activeIndex.bind(this);
+    this.playNext = this.playNext.bind(this);
+  }
+
+  vimeoPlayers() {
+    return this.props.videos.map((video) => {
+      return <Vimeo key={video.videoId} onEnded={this.playNext} vimeoId={video.videoId} />;
+    });
+  }
+
+  activeIndex() {
+    return this.props.videos.indexOf(this.state.activeVideo);
+  }
+
+  playNext() {
+    const nextIndex = this.activeIndex() + 1;
+    if (this.props.videos.length <= nextIndex) {
+      if (typeof this.props.onFinished === 'function') {
+        this.props.onFinished();
+      }
+    } else {
+      this.setState({ activeVideo: this.props.videos[nextIndex] });
+    }
   }
 
   render() {
-    const vimeoUrl = (url) => {
-      return `https://player.vimeo.com/video/${url}?title=0&byline=0&portrait=0&autoplay=1`;
-    };
+    const vimeos = this.vimeoPlayers();
 
     const videoThumbs = this.props.videos.map((video) => {
       return (
         <div
+          key={video.videoId}
           className={`video_thumb ${this.state.activeVideo === video ? 'active' : ''}`}
           onClick={() => { this.setState({ activeVideo: video }); }}
         >
@@ -31,7 +56,7 @@ class VideoGallery extends Component {
         <div className="video_thumbs">
           {videoThumbs}
         </div>
-        <iframe title="active_video" src={vimeoUrl(this.state.activeVideo.videoId)} frameBorder="0" allowFullScreen />
+        {vimeos[this.activeIndex()]}
       </div>
     );
   }
