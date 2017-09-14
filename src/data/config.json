@@ -20,7 +20,7 @@
       "video": "assets/video/steps-bg.mp4",
       "button": {
         "name": "TRY OUR GUIDES",
-        "url": "/landing-page"
+        "url": "/guides"
       }
     },
     "features": {
@@ -132,7 +132,7 @@
         "text": "Each digital guide tackles a common money problem by mirroring the in-person coaching process and linking users to resources and action-plans. The experiences provide step-by-step help and personalized action plans for things like paying rent, buying food, rebuilding credit and more.",
         "button": {
           "text": "TRY OUR GUIDES",
-          "url": "https://steps.ideo.org/landing-page"
+          "url": "https://steps.ideo.org/guides"
         },
         "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14aff7c507dd94fd58d/1504624977569/landing-page.png",
         "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144f9a61ed3bf9b76c6/1504624980820/gi-steps-mobile.png"
@@ -197,7 +197,7 @@
       "description": "Once we have a digital tool we know the community will embrace, we can’t wait to share it with everyone. Our focus then becomes about finding partnerships and strategies that will continue to improve them, and make them freely accessible to as many people and organizations as possible.",
       "button": {
         "text": "VIEW OUR GUIDES",
-        "url": "https://steps.ideo.org/landing-page"
+        "url": "https://steps.ideo.org/guides"
       }
     }
   },
