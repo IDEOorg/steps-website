@@ -45,7 +45,7 @@ class HowWeWorkPage extends Component {
     return (
       <div className="how_we_work_page">
         <div className="hww_header">
-          <Header showGuideButton />
+          <Header showGuideButton path={this.props.route.path} />
           <div className="hww_header_section">
             <h1 className="hww_title">{howwework.mainpage.title}</h1>
             <p className="hww_description">{howwework.mainpage.description}</p>

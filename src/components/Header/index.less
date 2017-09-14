@@ -2,6 +2,7 @@
 @import '../../globals/responsive.less';
 
 .header {
+  position: relative;
   height: @header-height;
   margin: 0 auto;
   display: flex;
@@ -23,8 +24,17 @@
     letter-spacing: 1px;
     text-decoration: none;
     margin-left: 2rem;
+    transition: 0.2s linear;
     &:hover {
-      color: rgb(241,241,241);
+      color: rgb(215,215,215) !important;
+    }
+  }
+  a.active_header_link {
+    border-bottom: 0.125rem solid #f5f5f5;
+    padding-bottom: 0.25rem;
+    &:hover {
+      color: white !important;
+      cursor: default;
     }
   }
   .header_button {
@@ -32,6 +42,7 @@
     width: 8.75rem;
     background: #4c79ff;
     margin-left: 2rem;
+    transition: 0.2s linear;
     p {
       font-size: 14px;
       line-height: 1.29;
@@ -86,8 +97,9 @@
       font-weight: 500;
       width: 100%;
       margin-bottom: 1.5rem;
+      transition: 0.2s linear;
       &:hover {
-        color: #4a4a4a !important;
+        color: rgb(241,241,241) !important;
         opacity: 0.85;
       }
       &:last-child {

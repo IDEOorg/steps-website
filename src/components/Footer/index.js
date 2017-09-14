@@ -18,4 +18,4 @@ const Footer = () => {
 
 export default Footer;
 
-Footer.displayName = 'Header';
+Footer.displayName = 'Footer';
