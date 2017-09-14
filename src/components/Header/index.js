@@ -21,7 +21,7 @@ export default class Header extends Component {
     let guideButton = null;
     if (this.props.showGuideButton) {
       guideButton = (
-        <Button styling="header_button" url="https://steps.ideo.org/landing-page">
+        <Button styling="header_button" url="https://steps.ideo.org/guides">
           <p>TRY A GUIDE</p>
         </Button>
       );
