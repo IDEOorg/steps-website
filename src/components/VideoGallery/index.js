@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import Vimeo from '../Vimeo';
 import './index.less';
 
@@ -27,7 +28,7 @@ class VideoGallery extends Component {
   playNext() {
     const nextIndex = this.activeIndex() + 1;
     if (this.props.videos.length <= nextIndex) {
-      if (typeof this.props.onFinished === 'function') {
+      if (_.isFunction(this.props.onFinished)) {
         this.props.onFinished();
       }
     } else {

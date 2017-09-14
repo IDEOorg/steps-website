@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import Player from '@vimeo/player';
 import './index.less';
 
@@ -12,7 +13,7 @@ class Vimeo extends Component {
 
     this.vimeoPlayer = new Player(this.iframe, options);
     this.vimeoPlayer.on('ended', () => {
-      if (typeof this.props.onEnded === 'function') {
+      if (_.isFunction(this.props.onEnded)) {
         this.props.onEnded();
       }
     });
