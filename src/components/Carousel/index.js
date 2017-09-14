@@ -4,10 +4,9 @@ import './index.less';
 
 class Carousel extends Component {
   componentDidMount() {
-    setTimeout(() => {
-      // slick initial sizing bug ref: https://github.com/akiran/react-slick/issues/809
-      this.slick.innerSlider.onWindowResized();
-    }, 0);
+    // slick initial sizing bug ref: https://github.com/akiran/react-slick/issues/809
+    setTimeout(this.slick.innerSlider.onWindowResized, 0);
+    setTimeout(this.slick.innerSlider.onWindowResized, 500);
   }
 
   render() {
@@ -15,7 +14,9 @@ class Carousel extends Component {
       const image = <img src={imageName} />; // eslint-disable-line
       return (
         <div className="carousel__slide" key={imageName}>
-          {image}
+          <div className="inner">
+            {image}
+          </div>
         </div>
       );
     });

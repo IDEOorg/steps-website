@@ -17,9 +17,10 @@
     "header": {
       "title": "A financial coach for everyone",
       "description": "Studies show that financial coaching is extremely effective in getting Americans on the path to financial health, so why do so few have access to it? We worked directly with the communities we hope to serve to create a suite of digital guides that mirror the in-person coaching process. And we’re giving them away for free.",
+      "video": "assets/video/steps-bg.mp4",
       "button": {
         "name": "TRY OUR GUIDES",
-        "url": "/guides"
+        "url": "https://steps.ideo.org/guides"
       }
     },
     "features": {
@@ -154,7 +155,7 @@
       "title": "Customize them yourself",
       "description": "Our original source code is freely available for anyone to use and distribute.",
       "infobox": {
-        "text": "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code.",
+        "text": "With code access you can customize, translate, localize or otherwise edit the guides to fit your needs.",
         "button": {
           "text": "VIEW GUIDES ON GITHUB",
           "url": "https://github.com/ideoorg"

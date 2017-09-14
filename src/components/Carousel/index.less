@@ -109,8 +109,17 @@
 .carousel__slide {
   position: relative;
   width: 100%;
-  > img {
-    display: block;
-    width: 100%;
+
+  > .inner {
+    padding-bottom: 63.7%;
+    .mobile({
+      padding-bottom: 162.1%;
+    });
+
+    > img {
+      position: absolute;
+      display: block;
+      width: 100%;
+    }
   }
 }
