@@ -17,7 +17,7 @@
     "header": {
       "title": "A financial coach for everyone",
       "description": "Studies show that financial coaching is extremely effective in getting Americans on the path to financial health, so why do so few have access to it? We worked directly with the communities we hope to serve to create a suite of digital guides that mirror the in-person coaching process. And we’re giving them away for free.",
-      "video": "assets/video/steps-bg.mp4",
+      "video": "https://github.com/IDEOorg/steps-website/blob/master/src/assets/video/steps-bg.mp4?raw=true",
       "button": {
         "name": "TRY OUR GUIDES",
         "url": "https://steps.ideo.org/guides"
@@ -174,6 +174,28 @@
         "videolink": "meh"
       }
     },
+    "videos": [
+      {
+        "videoId": 231578357,
+        "thumbnail": "https://i.vimeocdn.com/video/652418177.jpg?mw=600&mh=400",
+        "title": "Money is more than just numbers"
+      },
+      {
+        "videoId": 231578417,
+        "thumbnail": "https://i.vimeocdn.com/video/652418257.jpg?mw=600&mh=400",
+        "title": "Money is difficult to talk about"
+      },
+      {
+        "videoId": 231578394,
+        "thumbnail": "https://i.vimeocdn.com/video/652418263.jpg?mw=600&mh=400",
+        "title": "Actionable steps are needed to reach goals"
+      },
+      {
+        "videoId": 231578371,
+        "thumbnail": "https://i.vimeocdn.com/video/652418194.jpg?mw=600&mh=400",
+        "title": "Disadvantages compound and it is hard to get ahead"
+      }
+    ],
     "ideationpage": {
       "title": "Ideation",
       "description": "The next phase of our design process is about ideas, lots of them. We spend time thinking about all the ones that are too crazy to work and too crazy not to try. Then we invite some of the same people we met during our initial research to tell us what they think. This helps us refine our thinking and narrow down solid directions.",
