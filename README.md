@@ -1,6 +1,18 @@
-# * INSERT PROJECT NAME *
+# Steps Website
+
+The code behind the https://steps.ideo.org website
 
 ## Getting Started
+
+#### Running the code on your own local environment
+1. `git clone https://github.com/IDEOorg/steps-website`
+2. `cd steps-website`
+3. `npm install`
+4. Running the code on your server:
+  * **To run the development build:**
+  `npm run start` then go to http://localhost:3000
+  * **To run the production build**
+  `npm run build` then go to http://localhost:4000. The production files will be in the [/dist](/dist) folder.
 
 ## Contribution and Submitting Bugs
 
