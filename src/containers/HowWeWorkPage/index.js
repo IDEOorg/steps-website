@@ -54,7 +54,7 @@ class HowWeWorkPage extends Component {
                 className="button primary_button"
                 onClick={() => { this.setState({ showGallery: !this.state.showGallery }); }}
               >
-                <p>Learn More</p>
+                <p>LEARN MORE</p>
               </div>
             </div>
           </div>

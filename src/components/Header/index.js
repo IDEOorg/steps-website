@@ -19,7 +19,7 @@ export default class Header extends Component {
         isActive = true;
       }
       return (
-        <div>
+        <div className="header_link_box">
           <a className={classNames({header_link: true, active_header_link: isActive})} href={`#${content.url}`} key={content.url}>{content.name}</a>
         </div>
       );
