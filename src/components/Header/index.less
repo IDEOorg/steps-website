@@ -30,7 +30,12 @@
     }
   }
   a.active_header_link {
-    border-bottom: 0.125rem solid #f5f5f5;
+    .desktop({
+      border-bottom: 0.125rem solid #f5f5f5;
+    });
+    .mobile({
+      border-bottom: 0.125rem solid rgb(80,80,80);      
+    });
     padding-bottom: 0.25rem;
     &:hover {
       color: white !important;

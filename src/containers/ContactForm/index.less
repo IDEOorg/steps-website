@@ -1,6 +1,22 @@
 @import '../../globals/constants.less';
 @import '../../globals/responsive.less';
 
+.placeholder(@rules) {
+
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
+
 .contact_form {
   margin: 0 auto;
   max-width: 900px;
@@ -89,6 +105,14 @@ select {
   input[type="email"], select option {
     line-height: 25px;
     width: 100%;
+  }
+  input[type="email"], select {
+    line-height: 25px;
+    width: 100%;
+    .placeholder({
+      color: @color-dark;
+    });
+    color: @color-dark;
   }
 
   input[type="submit"] {
