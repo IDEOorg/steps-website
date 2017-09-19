@@ -10,9 +10,10 @@ import Carousel from '../../components/Carousel';
 import VideoBackground from '../../components/VideoBackground';
 
 const MainPage = (props) => {
-  const carouselSlidesDesktop = config.mainpage.features.carousel.desktop;
-  const carouselSlidesMobile = config.mainpage.features.carousel.mobile;
-  const benefitsSections = config.mainpage.benefits.benefitssections.map((section) => {
+  const mainpage = config.mainpage;
+  const carouselSlidesDesktop = mainpage.features.carousel.desktop;
+  const carouselSlidesMobile = mainpage.features.carousel.mobile;
+  const benefitsSections = mainpage.benefits.benefitssections.map((section) => {
     const benefits = section.benefits.map((benefit) => {
       const imageUrl = require(`../../assets/benefits/${benefit.imageurl}`); // eslint-disable-line import/no-dynamic-require, global-require
       return (
@@ -34,11 +35,10 @@ const MainPage = (props) => {
       </div>
     );
   });
-  const mainpage = config.mainpage;
   return (
     <div className="wrapper main_page">
       <div className="header_section main_section">
-        <VideoBackground src={mainpage.header.video} />
+        <VideoBackground src={mainpage.header.video} poster={mainpage.header.videoposter} />
         <Header showGuideButton={false} path={props.route.path} />
         <div className="header_subsection">
           <div className="header_subsection_wrapper">

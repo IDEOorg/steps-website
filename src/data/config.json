@@ -18,6 +18,7 @@
       "title": "A financial coach for everyone",
       "description": "Studies show that financial coaching is extremely effective in getting Americans on the path to financial health, so why do so few have access to it? We worked directly with the communities we hope to serve to create a suite of digital guides that mirror the in-person coaching process. And we’re giving them away for free.",
       "video": "https://github.com/IDEOorg/steps-website/blob/master/src/assets/video/steps-bg.mp4?raw=true",
+      "videoposter": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59c00155b7411cde538219d8/1505755478170/steps-bg.jpg",
       "button": {
         "name": "TRY OUR GUIDES",
         "url": "https://steps.ideo.org/guides"
@@ -201,7 +202,7 @@
       "description": "The next phase of our design process is about ideas, lots of them. We spend time thinking about all the ones that are too crazy to work and too crazy not to try. Then we invite some of the same people we met during our initial research to tell us what they think. This helps us refine our thinking and narrow down solid directions.",
       "infobox": {
         "title": "MINUTE APP",
-        "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found was a heavy burden that impacts household income tremendously."
+        "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found, was a heavy burden that impacts household income tremendously."
       },
       "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144e5dd5b60a9dffdb3/1504624968268/ideation.png"
     },
@@ -210,13 +211,13 @@
       "description": "When we have an idea that feels right, we create a series of prototypes in a few directions based in common threads from our research. Then we send them into the world for people to utilize. In this phase we gain valuable insights about the demographics of our audience and let their preferences dictate user experience for the next iteration.",
       "infobox": {
         "title": "DOUBLECHECK.ORG",
-        "description": "We launched Facebook ads to test 3 prototypes under a “text-a-coach” delivery method. DoubleCheck.org was the most successful, however all 3 gave us a better understanding of who exactly our audience was, what their core needs are, and to which design attributes they were drawn."
+        "description": "We launched Facebook ads to test 3 prototypes under a “text-a-coach” delivery method. DoubleCheck.org was the most successful, however all 3 gave us a better understanding of who exactly our audience was, what their core needs are, and to which design attributes they preferred."
       },
       "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1437131a5e567935970/1504624969531/convergence.png"
     },
     "adoptionpage": {
       "title": "Adoption",
-      "description": "Once we have a digital tool we know the community will embrace, we can’t wait to share it with everyone. Our focus then becomes about finding partnerships and strategies that will continue to improve them, and make them freely accessible to as many people and organizations as possible.",
+      "description": "Once we have digital tools we know the community will embrace, we can’t wait to share them with everyone. Our focus then becomes about finding partnerships and strategies that will continue to improve them, and make them freely accessible to as many people and organizations as possible.",
       "button": {
         "text": "VIEW OUR GUIDES",
         "url": "https://steps.ideo.org/guides"
