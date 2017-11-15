@@ -1,4 +1,5 @@
 @import '../../globals/constants.less';
+@import '../../globals/responsive.less';
 
 .about_ideo_section {
   background: white;
@@ -23,4 +24,42 @@
       display: block;
     }
   }
+}
+
+.lp-footer-section {
+  width: 100%;
+  height: 4rem;
+  background: #464646;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.lp-footer-copyright, .lp-footer-info {
+  margin: 0 2rem;
+}
+
+.lp-footer-copyright {
+  .mobile({
+    display: none;
+  });
+}
+
+.lp-footer-copyright p, .lp-footer-info a {
+  color: white;
+  opacity: 0.7;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.lp-footer-info a:hover {
+  opacity: 0.9;
+}
+
+.lp-footer-info {
+  display: flex;
 }

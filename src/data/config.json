@@ -17,8 +17,8 @@
     "header": {
       "title": "A financial coach for everyone",
       "description": "Studies show that financial coaching is extremely effective in getting Americans on the path to financial health, so why do so few have access to it? We worked directly with the communities we hope to serve to create a suite of digital guides that mirror the in-person coaching process. And we’re giving them away for free.",
-      "video": "https://github.com/IDEOorg/steps-website/blob/master/src/assets/video/steps-bg.mp4?raw=true",
-      "videoposter": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59c00155b7411cde538219d8/1505755478170/steps-bg.jpg",
+      "video": "/assets/steps-bg.mp4",
+      "videoposter": "/assets/steps-bg.jpg",
       "button": {
         "name": "TRY OUR GUIDES",
         "url": "https://steps.ideo.org/guides"
@@ -30,20 +30,20 @@
       "pullquoteauthor": "— Phuong Luong, Financial Coach",
       "carousel": {
         "desktop": [
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a624f7e0abec5d032a00/1504814630366/home-1.jpg",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a624cd39c304a11c44e4/1504814629721/home-2.jpg",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a62403596ecddfd276be/1504814634740/home-3.jpg",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a6258dd04187fcca6de8/1504814633389/home-4.jpg",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a68b9f7456da598eb8a6/1504814735414/home-5.jpg",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a6258dd04187fcca6ded/1504814634099/home-6.jpg"
+          "/assets/home-1.jpg",
+          "/assets/home-2.jpg",
+          "/assets/home-3.jpg",
+          "/assets/home-4.jpg",
+          "/assets/home-5.jpg",
+          "/assets/home-6.jpg"
         ],
         "mobile": [
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a62637c581fbf85bc11e/1504814633304/home-m-1.png",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a626d7bdce0ff5ff1e50/1504814632108/home-m-2.png",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a626cd39c304a11c44e9/1504814633140/home-m-3.png",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a6e2d2b85729bb95eaf4/1504814820847/home-m-4.png",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a627e3df28d5739d5190/1504814633159/home-m-5.png",
-          "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59b1a627f5e231475662b923/1504814637055/home-m-6.png"
+          "/assets/home-m-1.png",
+          "/assets/home-m-2.png",
+          "/assets/home-m-3.png",
+          "/assets/home-m-4.png",
+          "/assets/home-m-5.png",
+          "/assets/home-m-6.png"
         ]
       }
     },
@@ -135,8 +135,8 @@
           "text": "TRY OUR GUIDES",
           "url": "https://steps.ideo.org/guides"
         },
-        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14aff7c507dd94fd58d/1504624977569/landing-page.png",
-        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144f9a61ed3bf9b76c6/1504624980820/gi-steps-mobile.png"
+        "imgurl": "/assets/landing-page.png",
+        "imgurlmobile": "/assets/gi-steps-mobile.png"
       }
     },
     "collabpage": {
@@ -148,8 +148,8 @@
           "text": "NERDWALLET GUIDES",
           "url": "https://www.nerdwallet.com/blog/steps-to-financial-health/"
         },
-        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14acd0f68609f91e994/1504624979189/nerdwallet.png",
-        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1438419c2d149aa5f75/1504624977252/gi-nw-mobile.png"
+        "imgurl": "/assets/nerdwallet.png",
+        "imgurlmobile": "/assets/gi-nw-mobile.png"
       }
     },
     "codepage": {
@@ -161,8 +161,8 @@
           "text": "VIEW GUIDES ON GITHUB",
           "url": "https://github.com/ideoorg"
         },
-        "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec14f4c0dbfcb520f11fe/1504624977855/take-our-code.png",
-        "imgurlmobile": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec143893fc0f529eb7cd6/1504624969803/gi-code-mobile.png"
+        "imgurl": "/assets/take-our-code.png",
+        "imgurlmobile": "/assets/gi-code-mobile.png"
       }
     }
   },
@@ -178,22 +178,22 @@
     "videos": [
       {
         "videoId": 231578357,
-        "thumbnail": "https://i.vimeocdn.com/video/652418177.jpg?mw=600&mh=400",
+        "thumbnail": "/assets/652418177.jpg",
         "title": "Money is more than just numbers"
       },
       {
         "videoId": 231578417,
-        "thumbnail": "https://i.vimeocdn.com/video/652418257.jpg?mw=600&mh=400",
+        "thumbnail": "/assets/652418257.jpg",
         "title": "Money is difficult to talk about"
       },
       {
         "videoId": 231578394,
-        "thumbnail": "https://i.vimeocdn.com/video/652418263.jpg?mw=600&mh=400",
+        "thumbnail": "/assets/652418263.jpg",
         "title": "Actionable steps are needed to reach goals"
       },
       {
         "videoId": 231578371,
-        "thumbnail": "https://i.vimeocdn.com/video/652418194.jpg?mw=600&mh=400",
+        "thumbnail": "/assets/652418194.jpg",
         "title": "Disadvantages compound and it is hard to get ahead"
       }
     ],
@@ -204,7 +204,7 @@
         "title": "MINUTE APP",
         "description": "Minute app is an early concept from the ideation phase for STEPS. It focused on providing easy access to affordable childcare through a user’s social network. Childcare, we found, was a heavy burden that impacts household income tremendously."
       },
-      "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec144e5dd5b60a9dffdb3/1504624968268/ideation.png"
+      "imgurl": "/assets/ideation.png"
     },
     "convergencepage": {
       "title": "Convergence",
@@ -213,7 +213,7 @@
         "title": "DOUBLECHECK.ORG",
         "description": "We launched Facebook ads to test 3 prototypes under a “text-a-coach” delivery method. DoubleCheck.org was the most successful, however all 3 gave us a better understanding of who exactly our audience was, what their core needs are, and to which design attributes they preferred."
       },
-      "imgurl": "https://static1.squarespace.com/static/58acc4a603596e36163ab018/5925e3e5e3df2813a1f3266b/59aec1437131a5e567935970/1504624969531/convergence.png"
+      "imgurl": "/assets/convergence.png"
     },
     "adoptionpage": {
       "title": "Adoption",
