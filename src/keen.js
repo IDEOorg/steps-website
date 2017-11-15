@@ -133,7 +133,7 @@ export const keenClient = initKeen();
 /* HOC for tracking page views with React Router */
 export const withTracker = (WrappedComponent, options = {}) => {
   const trackPage = (page) => {
-    keenClient.recordEvent('pageview', {...options});
+    keenClient.recordEvent('pageviews', {...options});
   };
 
   const HOC = class extends Component {
