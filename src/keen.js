@@ -40,7 +40,7 @@ function initKeen() {
     return {
       geo: {
         info: { /* Enriched */ },
-        ip_address: '${keen.ip}',
+        ip_address: '${keen.ip}', // eslint-disable-line no-template-curly-in-string
       },
       page: {
         info: { /* Enriched */ },
@@ -54,8 +54,8 @@ function initKeen() {
       tech: {
         browser: helpers.getBrowserProfile(),
         info: { /* Enriched */ },
-        user_agent: '${keen.user_agent}',
-        device_type: md.tablet() ? 'tablet' : md.mobile() ? 'mobile' : 'desktop'
+        user_agent: '${keen.user_agent}', // eslint-disable-line no-template-curly-in-string
+        device_type: md.tablet() ? 'tablet' : md.mobile() ? 'mobile' : 'desktop' // eslint-disable-line no-nested-ternary
       },
       time: helpers.getDatetimeIndex(),
       visitor: {
@@ -110,18 +110,20 @@ function initKeen() {
     or you can do it inside the code where you have access to stuff like state and props.
     */
 
+  // returns #document. If you need currentTarget, see my implementation below
   // Keen.listenTo({
   //   'click .action_button, .action_button *': function(e){
-  //     console.log('currentTarget: ', e.currentTarget); // returns #document. If you need currentTarget, see my implementation below
+  //     console.log('currentTarget: ', e.currentTarget); 
   //   }
   // });
 
   /* DOM Event Capturing - preserves event.currentTarget */
+  // this will return the node the listener is attached to, even if you click a childs
   // window.onload = ()=> {
   //   const resourceButtons = document.querySelectorAll('.action_button');
   //   resourceButtons.forEach( (button) => {
   //     button.addEventListener('click', (e) => {
-  //       console.log(e.currentTarget); // will return the node the listener is attached to, even if you click a child
+  //       console.log(e.currentTarget); 
   //     });
   //   });
   // };
@@ -132,7 +134,7 @@ export const keenClient = initKeen();
 
 /* HOC for tracking page views with React Router */
 export const withTracker = (WrappedComponent, options = {}) => {
-  const trackPage = (page) => {
+  const trackPage = (page) => { // eslint-disable-line no-unused-vars
     keenClient.recordEvent('pageviews', {...options});
   };
 
