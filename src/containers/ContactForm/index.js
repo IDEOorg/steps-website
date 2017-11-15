@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import GoogleAnalytics from 'react-ga';
+
 import './index.less';
 
 class ContactForm extends Component {
@@ -24,6 +26,12 @@ class ContactForm extends Component {
     if (!valid) {
       e.preventDefault();
     }
+    console.log('submitted');
+    GoogleAnalytics.event({
+      category: 'Contact',
+      action: 'submit',
+      label: valid ? 'true' : 'false'
+    });
   }
 
   render() {
