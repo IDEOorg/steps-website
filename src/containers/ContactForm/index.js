@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { keenClient } from '../../keen';
+
 import './index.less';
 
 class ContactForm extends Component {
@@ -24,6 +26,10 @@ class ContactForm extends Component {
     if (!valid) {
       e.preventDefault();
     }
+    keenClient.recordEvent('submits', {
+      type: 'contact',
+      action: 'signupEmail'
+    });
   }
 
   render() {
