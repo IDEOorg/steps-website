@@ -7,7 +7,7 @@ import GetInvolvedPage from '../containers/GetInvolvedPage';
 import HowWeWorkPage from '../containers/HowWeWorkPage';
 import MissionPage from '../containers/MissionPage';
 import constants from '../data/constants';
-import { withTracker } from '../keen';
+import { withTracker } from '../globals/tracker';
 
 const Routes = (props) => {
   return (
