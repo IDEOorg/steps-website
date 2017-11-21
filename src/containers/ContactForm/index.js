@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { keenClient } from '../../keen';
+import GoogleAnalytics from 'react-ga';
+import { keenClient } from '../../globals/tracker';
 
 import './index.less';
 
@@ -29,6 +30,11 @@ class ContactForm extends Component {
     keenClient.recordEvent('submits', {
       type: 'contact',
       action: 'signupEmail'
+    });
+    GoogleAnalytics.event({
+      category: 'Contact',
+      action: 'submit',
+      label: valid ? 'true' : 'false'
     });
   }
 

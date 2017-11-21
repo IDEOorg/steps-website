@@ -32,8 +32,7 @@ function initKeen() {
     requestType: 'jsonp'
   });
 
-  const debug = process.env.NODE_ENV === 'development';
-  // // Optionally prevent recording in dev mode
+  // Optionally prevent recording in dev mode
   // Keen.enabled = true; 
 
   // Display events in the browser console
@@ -137,8 +136,11 @@ function initKeen() {
   // };
   return keenClient;
 }
+export const keenClient = initKeen();
 
-const withTracker = (WrappedComponent, options = {}) => {
+
+/* HOC for tracking page views with React Router */
+export const withTracker = (WrappedComponent, options = {}) => {
   const trackPage = (page) => {
     keenClient.recordEvent('pageviews', {...options});
     GoogleAnalytics.set({
