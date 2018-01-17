@@ -1,0 +1,79 @@
+@import '../../globals/constants.less';
+@import '../../globals/responsive.less';
+
+.prototype_section {
+  margin-top: 80px;
+  h2 {
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+  }
+  .prototype_img_section, .prototype_description_section {
+    width: 60%;
+    margin: 0 auto;
+
+  }
+  .prototype_description_section {
+    p {
+      color: black;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+    .prototype_links {
+      margin-top: 16px;
+    }
+    .prototype_link {
+      width: 100%;
+    }
+    .prototype_link a {
+      display: inline-block;
+      color: @color-blue;
+      text-decoration: underline;
+    }
+  }
+  .prototype_img_section {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+  .prototype_img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px rgba(150,150,150,0.7);
+  }
+  p.prototype_caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: @color-text;
+  }
+}
+.prototypes_intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://steps.ideo.org/assets/prototypes-cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prototypes_intro_box {
+  width: 60%;
+  box-shadow: 2px 5px 14px rgba(130,130,130,0.5);
+  background-color: rgba(245,245,245,0.87);
+  border-radius: 5px;
+  padding: 5%;
+  h2, p {
+    color: rgb(40,40,40);
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  p {
+    font-size: 20px;
+  }
+}

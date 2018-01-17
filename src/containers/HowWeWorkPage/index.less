@@ -27,6 +27,7 @@
     .desktop({
       display: flex;
       align-content: center;
+      justify-content: center;
       flex-wrap: wrap;
       height: ~"calc(100% - @{header-height})";
       width: 50%;
@@ -34,6 +35,13 @@
     .mobile({
       padding: 1rem 10% 3rem 10%;
     });
+    .intro_button_section {
+      text-align: center;
+      margin: 24px 24px;
+      .mobile({
+        display: none;
+      });
+    }
     margin: 0 auto;
     h1, p {
       text-align: center;
@@ -185,12 +193,11 @@
       letter-spacing: 0.0625rem;
     }
   }
-  .hww_adoption {
-    background: @color-green;
+  .hww_default {
     display: flex;
     align-content: center;
     align-items: center;
-    .hww_adoption_section {
+    .hww_default_section {
       .desktop({
         width: 55%;
         margin: 7rem auto;
@@ -209,8 +216,23 @@
       }
     }
     .hww_button {
-      margin: 4rem auto 0 auto;
+      margin: 4rem auto;
       width: 60%;
     }
+  }
+  .hww_adoption {
+    background: @gray-background;
+    h1 {
+      color: @color-text;
+    }
+    p {
+      color: @color-text;
+    }
+    .hww_button_section p {
+      color: white;
+    }
+  }
+  .hww_prototype {
+    background: @color-green;
   }
 }

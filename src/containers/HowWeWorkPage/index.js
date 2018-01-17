@@ -49,13 +49,18 @@ class HowWeWorkPage extends Component {
           <div className="hww_header_section">
             <h1 className="hww_title">{howwework.mainpage.title}</h1>
             <p className="hww_description">{howwework.mainpage.description}</p>
-            <div className="button_section">
+            <div className="intro_button_section">
               <div
                 className="button primary_button"
                 onClick={() => { this.setState({ showGallery: !this.state.showGallery }); }}
               >
-                <p>LEARN MORE</p>
+                <p>{howwework.mainpage.button1.text}</p>
               </div>
+            </div>
+            <div className="intro_button_section">
+              <Button url={howwework.mainpage.button2.url} styling={"primary_button green hww_button"} openSamePage>
+                <p>{howwework.mainpage.button2.text}</p>
+              </Button>
             </div>
           </div>
           {videoGallery}
@@ -89,12 +94,12 @@ class HowWeWorkPage extends Component {
             <img className="hww_visual_img" src={convergenceImg} alt={convergenceImg} />
           </div>
         </div>
-        <div className="hww_adoption">
-          <div className="hww_adoption_section">
+        <div className="hww_adoption hww_default">
+          <div className="hww_default_section">
             <h1>{howwework.adoptionpage.title}</h1>
             <p>{howwework.adoptionpage.description}</p>
             <div className="hww_button_section">
-              <Button url={howwework.adoptionpage.button.url} styling={"primary_button blue hww_button"}>
+              <Button url={howwework.adoptionpage.button.url} styling={"primary_button green hww_button"} openSamePage>
                 <p>{howwework.adoptionpage.button.text}</p>
               </Button>
             </div>
@@ -105,6 +110,21 @@ class HowWeWorkPage extends Component {
     );
   }
 }
+
+// <div className="hww_prototype hww_default">
+//   <div className="hww_default_section">
+//     <h1>{howwework.prototypepage.title}</h1>
+//     <p>{howwework.prototypepage.description}</p>
+//     <div className="hww_button_section">
+// <Button
+// url={howwework.prototypepage.button.url}
+// styling={"primary_button blue hww_button"}
+// openSamePage>
+//         <p>{howwework.prototypepage.button.text}</p>
+//       </Button>
+//     </div>
+//   </div>
+// </div>
 
 export default HowWeWorkPage;
 

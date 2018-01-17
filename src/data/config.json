@@ -170,9 +170,12 @@
     "mainpage": {
       "title": "Human-centered design starts with people",
       "description": "Our research begins with the people we hope to serve and the experts, non-profit organizations, and service providers that work within those communities. Once we begin to design from their perspective, we start to identify where we could have the greatest impact in scaling a digital solution.",
-      "button": {
-        "text": "VIEW WORK",
-        "videolink": "meh"
+      "button1": {
+        "text": "WATCH VIDEOS"
+      },
+      "button2": {
+        "text": "EXPLORE PROTOTYPES",
+        "url": ".#/prototypes"
       }
     },
     "videos": [
@@ -217,7 +220,7 @@
     },
     "adoptionpage": {
       "title": "Adoption",
-      "description": "Once we have digital tools we know the community will embrace, we can’t wait to share them with everyone. Our focus then becomes about finding partnerships and strategies that will continue to improve them, and make them freely accessible to as many people and organizations as possible.",
+      "description": "Once we have tools we know the community will embrace, we can’t wait to share them with everyone. Our focus then becomes about finding partnerships and strategies that will continue to improve them, and make them freely accessible to as many people and organizations as possible.",
       "button": {
         "text": "VIEW OUR GUIDES",
         "url": "https://steps.ideo.org/guides"
@@ -320,5 +323,111 @@
         }
       ]
     }
+  },
+  "prototypepage": {
+    "intro": {
+      "title": "Producing research-based projects to get tangible, experiment, and learn",
+      "description": "We’re strong believers in the concept of making to learn, and view each project as an opportunity to experiment by testing new ideas and insights. This process allows us to refine our strategic vision and creatively explore areas where we can have the greatest impact on financial health in the United States. Below are some of the concepts we’ve worked on and what we’ve learned."
+    },
+    "sections": [
+      {
+        "title": "Early Concepts",
+        "image": "http://steps.ideo.org/assets/Early-Concepts-1.jpg",
+        "caption": "Some ideas we tested out at the start of the project.",
+        "description": "These prototype ideas came from our early brainstorming days. By allowing ourselves to think broadly about what a digital tool could look like, we were able to stretch the limits of our creativity and explore non-traditional paths to impact. While we didn’t test each concept, the brainstorming exercises helped us narrow our focus and identify the most practical, impactful and sustainable solutions."
+      },
+      {
+        "title": "Money Stories",
+        "image": "http://steps.ideo.org/assets/Money-Stories-1.jpg",
+        "caption": "Money Stories visuals.",
+        "description": "During our research, we collected countless stories, tips, and tricks about financial health from low-income individuals across the country and created a catalogue of information that helped develop our understanding of real issues affecting real people. This catalogue is shared on Money Stories, a selection of personal narratives that users can read, learn from, and contribute their own.",
+        "buttons": [
+          {
+            "text": "Visit Money Stories",
+            "url": "https://stories.money"
+          }
+        ]
+      },
+      {
+        "title": "Demo Day",
+        "image": "http://steps.ideo.org/assets/Demo-Day-1.jpg",
+        "caption": "Demo day presentations.",
+        "description": "As we started to delve into our research, our team identified five promising concepts to share at a “Demo Day” with our non-profit partners and friends. Demo Day was a great opportunity to test prototypes with potential users, and the feedback we received helped us refine our ideas and informed our decision to either test certain prototypes or move away from a concept."
+      },
+      {
+        "title": "Next Week",
+        "video": "https://player.vimeo.com/video/182625126",
+        "caption": "Next Week video.",
+        "description": "One of our first observations about financial well-being in America is that money is difficult to talk about--it’s technical, complicated and very personal. Unfortunately, this lack of dialogue is not without consequence; in low-income communities, the notion of financial health is almost invisible and often misunderstood. Next Week is an online series that tells the stories of everyday people in easily digestible short-form video format . By sharing a mix of experiences, we aimed to highlight financial health as an issue that affects us all and connects people to relevant resources and services."
+      },
+      {
+        "title": "Text A Coach",
+        "image": "http://steps.ideo.org/assets/TAC-1.jpg",
+        "caption": "A flowchart showing how our Text A Coach model works.",
+        "description": "In-person financial coaching is effective, but barriers—like social taboos around money, or a lack of information and time—can make it difficult for many low-income Americans to enter a meaningful financial coaching relationship.\nTo address these barriers, we designed Text-a-Coach: this accessible solution allows low-income Americans to text a financial coach with confidential questions, while building a relationship that will let them set goals and improve their financial health at their convenience. Our goal is to have the Text-a-Coach code become an open-source solution for non-profits who want to expand their financial coaching services."
+      },
+      {
+        "title": "Minute",
+        "image": "http://steps.ideo.org/assets/Minute-1.jpg",
+        "description": "For many low-income Americans, the cost and difficulty of accessing childcare can be a heavy burden that impacts their income, their ability to remain in the workforce, and ultimately, their financial health. To address this issue, we designed Minute: an online service that leverages a user’s social network to build an affordable, easily accessible childcare community, allowing low-income parents to find support without taking time away from their jobs."
+      },
+      {
+        "title": "The Big Hustle",
+        "image": "http://steps.ideo.org/assets/Hustle-1.jpg",
+        "description": "Low-income independent workers often have irregular income, no benefits or safety nets, and can be unaware of the financial challenges of self-employment. The Big Hustle is a casual game that lets people explore different scenarios that independent workers may encounter. Our goal is to encourage learning about financial health in a fun and interactive tool with incentives for good decision-making. The Big Hustle is engaging before it’s educational, and offers users small rewards and real life discounts to encourage actions taken toward financial health and education."
+      },
+      {
+        "title": "More than a Paycheck",
+        "image": "http://steps.ideo.org/assets/More-1.jpg",
+        "description": "Many Americans don’t have savings and feel they can’t start because every dollar of every paycheck is already allocated. In studying behavioral change, however, we also found that people can adjust to the pay they see on a check and that once a habit is established--it sticks. To further explore this idea, we created More Than a Paycheck, an employer-incentivized savings plan that is automatically funded with small deductions from each paycheck. By partnering with employers, More Than a Paycheck would allow us to design better financial habits into existing systems and actions."
+      },
+      {
+        "title": "DoubleCheck, Pocket Squad, & The 99",
+        "image": "http://steps.ideo.org/assets/T-PS.jpg",
+        "description": "After additional research and testing, we decided to further iterate on our Text-a-Coach concept with three new prototypes and design directions. To measure their resonance within low-income communities, we launched ads on Facebook. Our goal was to determine which concept most appealed to our audience and better understand our target demographics (age, sex, income, location, etc.). Our previous testing also indicated that while users were open to texting as a solution, they often didn’t know how to begin the conversation. In our iterations of Double Check, Pocket Squad and The 99, we incorporated conversation starters and allowed people to read questions that other users had asked. While tests were limited, the feedback gathered has been useful and aligned with many insights received from our partners, coaches, and consumers.",
+        "buttons": [
+          {
+            "text": "Visit thedoublecheck.org",
+            "url": "http://www.thedoublecheck.org/"
+          },
+          {
+            "text": "Visit pocketsquad.org",
+            "url": "http://www.pocketsquad.org/"
+          },
+          {
+            "text": "Visit inthe99.com",
+            "url": "http://www.inthe99.com/"
+          }
+        ]
+      },
+      {
+        "title": "MEDA (Mission Economic Development Agency)",
+        "image": "http://steps.ideo.org/assets/meda-prototype.png",
+        "caption": "Above are a few of the resources that can be used for financial coaches to interact with their clients.",
+        "description": "The Viva kit is a custom bilingual toolkit from Mission Development Economic Agency (MEDA) developed for financial coaches working with low to moderate-income families. The tools are built to help families connect life aspirations to their financial goals through an engaging and confidence-building experience, and gives organizations tools, activities, and frameworks to integrate financial capabilities in their offerings. MEDA can provide technical assistance to organizations interested in leveraging the toolkit.",
+        "buttons": [
+          {
+            "text": "Viva Toolkit Orientation",
+            "url": "https://steps.ideo.org/assets/MEDA_ToolkitGuide.pdf"
+          },
+          {
+            "text": "Aspiration Cards (English)",
+            "url": "https://steps.ideo.org/assets/MEDA_GameCards_English.pdf"
+          },
+          {
+            "text": "Aspiration Cards (Spanish)",
+            "url": "https://steps.ideo.org/assets/MEDA_GameCard_ES.pdf"
+          },
+          {
+            "text": "Spinner Mat",
+            "url": "https://steps.ideo.org/assets/MEDA_SpinnerMat.pdf"
+          },
+          {
+            "text": "Action Plan",
+            "url": "https://steps.ideo.org/assets/MEDA_ActionPlan.pdf"
+          }
+        ]
+      }
+    ]
   }
 }
