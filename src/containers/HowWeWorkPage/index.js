@@ -65,6 +65,11 @@ class HowWeWorkPage extends Component {
           </div>
           {videoGallery}
           <div className="hww_video_thumbs_mobile">
+            <div className="intro_button_section">
+              <Button url={howwework.mainpage.button2.url} styling={"primary_button green hww_button"} openSamePage>
+                <p>{howwework.mainpage.button2.text}</p>
+              </Button>
+            </div>
             {videoThumbs}
           </div>
         </div>
