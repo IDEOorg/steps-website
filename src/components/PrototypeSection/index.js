@@ -7,7 +7,7 @@ const PrototypeSection = (props) => {
   let buttons = null;
   let mediaSection = null;
   if (props.video) {
-    mediaSection = <iframe src={props.video} title="Next Week" width="768" height="432" frameBorder="0" />;
+    mediaSection = <iframe src={props.video} title="Next Week" className="prototype_vid" frameBorder="0" />;
   } else if (props.image) {
     mediaSection = <img src={props.image} alt="Prototype" className="prototype_img" />;
   }
