@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
+import ReactMarkdown from 'react-markdown';
 import './index.less';
-// import Carousel from '../../components/Carousel';
 
 const PrototypeSection = (props) => {
   let buttons = null;
@@ -28,7 +28,9 @@ const PrototypeSection = (props) => {
         <p className="prototype_caption">{props.caption}</p>
       </div>
       <div className="prototype_description_section">
-        <p>{props.description}</p>
+        <p>
+          <ReactMarkdown source={props.description} />
+        </p>
         <div className="prototype_links">
           { buttons }
         </div>
