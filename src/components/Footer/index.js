@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="lp-footer-info">
           <a href="https://www.ideo.org/privacy-policy">Privacy Policy</a>
-          <a href="https://www.ideo.org/terms-of-use">Terms of Use</a>
+          <a href="https://steps.ideo.org/terms">Terms of Use</a>
           <a href="http://steps.ideo.org/#/mission">Contact Us</a>
         </div>
       </div>
