@@ -8,6 +8,7 @@ import HowWeWorkPage from '../containers/HowWeWorkPage';
 import MissionPage from '../containers/MissionPage';
 import PrototypesPage from '../containers/PrototypesPage';
 import TermsPage from '../containers/TermsPage';
+import GalleryPage from '../containers/GalleryPage';
 import constants from '../data/constants';
 import { withTracker } from '../globals/tracker';
 
@@ -21,6 +22,7 @@ const Routes = (props) => {
         <Route path={constants.routes.mission} component={MissionPage} />
         <Route path={constants.routes.prototypes} component={PrototypesPage} />
         <Route path={constants.routes.terms} component={TermsPage} />
+        <Route path={constants.routes.gallery} component={GalleryPage} />
       </Route>
     </Router>
   );

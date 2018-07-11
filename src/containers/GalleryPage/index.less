@@ -1,0 +1,249 @@
+@import '../../globals/constants.less';
+@import '../../globals/responsive.less';
+
+.gallery_page {
+  h2 {
+    .subhead;
+  }
+  p.description {
+    .medbody;
+  }
+  .header {
+    position: relative;
+    z-index: 10;
+  }
+  .gal_header {
+    position: relative;
+    background-color: @color-blue;
+
+    .desktop({
+      background-image: url('/assets/howwework.jpg');
+      background-blend-mode: multiply;
+      background-size: cover;
+      height: 100vh;
+    });
+  }
+  .gal_header_section {
+    .desktop({
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: ~"calc(100% - @{header-height})";
+      width: 50%;
+    });
+    .mobile({
+      padding: 1rem 10% 3rem 10%;
+    });
+    .intro_button_section {
+      text-align: center;
+      margin: 24px 24px;
+      .mobile({
+        display: none;
+      });
+    }
+    margin: 0 auto;
+    h1, p {
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      .title;
+    }
+    p {
+      .medbody;
+    }
+    .button_section {
+      margin: 20px auto;
+      text-align: center;
+      .mobile({
+        display: none;
+      });
+    }
+  }
+  .gal_video_desktop {
+    .mobile({
+      display: none;
+    });
+  }
+  .gal_video_thumbs_mobile {
+    padding-bottom: 80px;
+
+    .desktop({
+      display: none;
+    });
+
+    .intro_button_section .gal_button {
+      text-align: center;
+      margin: 0 auto;
+      width: 13rem;
+    }
+
+    .video_thumb {
+      display: block;
+      width: 100%;
+      padding: 40px;
+
+      p {
+        color: white;
+        font-size: 1.25em;
+        text-align: center;
+        text-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+      }
+
+      .iframe_container {
+        position: relative;
+        padding-bottom: 56.25%;
+        margin-bottom: 10px;
+        iframe {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+        }
+      }
+    }
+  }
+  .gal_visual {
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  .gal_visual_img {
+    .desktop({
+      width: 70%;
+    });
+    .mobile({
+      width: 100%;
+    });
+    height: auto;
+  }
+  .gal_ideation, .gal_convergence {
+    .desktop({
+      display: flex;
+      padding-top: 7rem;
+    });
+    .mobile({
+      padding-top: 4.3em;
+    });
+    .gal_content, .gal_visual {
+      .desktop({
+        width: 50%;
+      });
+      .mobile({
+        width: 85%;
+        margin: 0 auto;
+      });
+    }
+    .gal_visual {
+      .mobile({
+        margin: 3rem 0 0 0;
+      });
+    }
+  }
+  .gal_ideation {
+    .desktop({
+      .gal_content {
+        margin: 0 10%;
+      }
+    });
+    .mobile({
+      position: relative;
+    });
+    background: #fff0ed;
+    p, h2 {
+      color: @color-dark;
+    }
+  }
+  .gal_convergence {
+    .desktop({
+      .gal_content {
+        margin-right: 10%;
+        order: 2
+      }
+      .gal_visual {
+        order: 1;
+      }
+    });
+    .mobile({
+      position: relative;
+    });
+  }
+  .gal_convergence {
+    background: @color-blue;
+    h2 {
+      color: white;
+    }
+    p {
+      color: rgb(249,249,249);
+    }
+  }
+  .gal_infobox {
+    .desktop({
+      width: 75%;
+      margin-top: 4rem;
+      margin-bottom: 6rem;
+    });
+    .mobile({
+      position: absolute;
+      width: 85%;
+      bottom: 2rem;
+      left: 7.5%;
+    });
+    p.gal_infobox_description {
+      .smallbody;
+      color: @color-text;
+    }
+    h6.gal_infobox_title {
+      .smalltext;
+      color: @color-dark;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 1em;
+      letter-spacing: 0.0625rem;
+    }
+  }
+  .gal_default {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    .gal_default_section {
+      .desktop({
+        width: 55%;
+        margin: 7rem auto;
+      });
+      .mobile({
+        width: 85%;
+        margin: 4.5rem auto;
+      });
+      h1 {
+        .subhead;
+        text-align: center;
+      }
+      p {
+        .medbody;
+        text-align: center;
+      }
+    }
+    .gal_button {
+      margin: 4rem auto;
+      width: 60%;
+    }
+  }
+  .gal_adoption {
+    background: @gray-background;
+    h1 {
+      color: @color-text;
+    }
+    p {
+      color: @color-text;
+    }
+    .gal_button_section p {
+      color: white;
+    }
+  }
+  .gal_prototype {
+    background: @color-green;
+  }
+}
